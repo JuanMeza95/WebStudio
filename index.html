@@ -19,47 +19,56 @@
     />
     <!--enlace scc-->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
     <title>STUDIO</title>
   </head>
   <body>
     <!--header -->
     <header class="header">
       <div class="container">
-      <a href="./index.html" class="logo">Web<span class="web">Studio</span></a>
-      <nav>
-        <ul class="header__listnav">
+        <a href="./index.html" class="logo"
+          >Web<span class="web">Studio</span></a
+        >
+        <nav>
+          <ul class="header__listnav">
+            <li>
+              <a href="index.html" class="header__listnav-item">Estudio</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="header__listnav-item"
+                >Portafolio</a
+              >
+            </li>
+            <li>
+              <a href="#footer" class="header__listnav-item">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__listcontact">
           <li>
-            <a href="index.html" class="header__listnav-item">Estudio</a>
+            <a href="tel:+525555296000">
+              <svg class="icon">
+                <use xlink:href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </a>
+            <a href="tel:+525555296000" class="header__listcontact-item">
+              +52 55 5529 6000
+            </a>
           </li>
           <li>
-            <a href="portafolio.html" class="header__listnav-item">Portafolio</a>
-          </li>
-          <li>
-            <a href="#footer" class="header__listnav-item">Contactos</a>
+            <a href="mailto:info@devstudio.com">
+              <svg class="iconsobre">
+                <use xlink:href="./images/icons.svg#icon-sobre"></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:info@devstudio.com"
+              class="header__listcontact-item"
+            >
+              info@devstudio.com</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header__listcontact">
-        <li>
-          <a href="tel:+525555296000">
-            <svg class="icon">
-              <use xlink:href="./images/icons.svg#icon-tel"></use>
-            </svg>
-          </a> 
-          <a href="tel:+525555296000" class="header__listcontact-item">
-             +52 55 5529 6000 </a>
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <svg class="iconsobre">
-              <use xlink:href="./images/icons.svg#icon-sobre"></use>
-            </svg></a>
-          <a href="mailto:info@devstudio.com" class="header__listcontact-item">
-         info@devstudio.com</a
-          >
-        </li>
-      </ul>
       </div>
     </header>
     <!--main-->
@@ -67,428 +76,463 @@
       <!--firstsection-->
       <section class="hero">
         <div class="container">
-        <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="bottom" class="hero_btn">
-          Solicite nuestro servicio
-        </button>
+          <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button class="hero_btn">Solicite nuestro servicio</button>
         </div>
       </section>
-    <!--secondsection-->
-     <!--svglisttext-->
-     <section class="listtext">
+      <!--secondsection-->
+      <!--svglisttext-->
+      <section class="listtext">
         <div class="container">
           <h2 hidden>Beneficios de nuestros servicios</h2>
           <!--tituloinvisible-inicio-lista-->
-        <ul class="listtext__details">
-          <!--item1-->
-          <li class="listtext__details-item">
-            <div class="listtextdiv">
-              <div class="rectangle">
-                <svg class="antena">
-                  <use xlink:href="./images/icons.svg#icon-antena"></use>
-                </svg>
+          <ul class="listtext__details">
+            <!--item1-->
+            <li class="listtext__details-item">
+              <div class="listtextdiv">
+                <div class="rectangle">
+                  <svg class="antena">
+                    <use xlink:href="./images/icons.svg#icon-antena"></use>
+                  </svg>
+                </div>
+                <h3 class="listtextcontent">ATENCIÓN A LOS DETALLES</h3>
+                <p class="listtextcontentp">
+                  Nos adentramos en todos los detalles y procesos de su negocio,
+                  para así desarrollar una solución a su medida.
+                </p>
               </div>
-            <h3 class="listtextcontent">ATENCIÓN A LOS DETALLES</h3>
-            <p class="listtextcontentp">
-              Nos adentramos en todos los detalles y procesos de su negocio,
-              para así desarrollar una solución a su medida.
-            </p>
-            </div>
-          </li>
-          <!--item2-->
-          <li class="listtext__details-item">
-             <div class="listtextdiv">
-              <div class="rectangle">
-                    <svg class="reloj">
-                  <use xlink:href="./images/icons.svg#icon-reloj"></use>
-                </svg>
-              </div>
-              <h3 class="listtextcontent">PUNTUALIDAD</h3>
-              <p class="listtextcontentp">
-              Con nosotros, usted puede sentirse seguro y protegido. Un
-              principio importante de la empresa: respetar su tiempo y respetar
-              los plazos acordados.
-               </p>
+            </li>
+            <!--item2-->
+            <li class="listtext__details-item">
+              <div class="listtextdiv">
+                <div class="rectangle">
+                  <svg class="reloj">
+                    <use xlink:href="./images/icons.svg#icon-reloj"></use>
+                  </svg>
+                </div>
+                <h3 class="listtextcontent">PUNTUALIDAD</h3>
+                <p class="listtextcontentp">
+                  Con nosotros, usted puede sentirse seguro y protegido. Un
+                  principio importante de la empresa: respetar su tiempo y
+                  respetar los plazos acordados.
+                </p>
               </div>
             </li>
             <!--item3-->
-          <li class="listtext__details-item">
-            <div class="listtextdiv">
-              <div class="rectangle">
-                   <svg class="diagrama">
-                  <use xlink:href="./images/icons.svg#icon-diagrama"></use>
-                </svg>
+            <li class="listtext__details-item">
+              <div class="listtextdiv">
+                <div class="rectangle">
+                  <svg class="diagrama">
+                    <use xlink:href="./images/icons.svg#icon-diagrama"></use>
+                  </svg>
+                </div>
+                <h3 class="listtextcontent">PLANIFICACIÓN</h3>
+                <p class="listtextcontentp">
+                  Usted podrá observar y participar en cada fase del desarrollo
+                  y aplicación de soluciones.
+                </p>
               </div>
-              <h3 class="listtextcontent">PLANIFICACIÓN</h3>
-            <p class="listtextcontentp">
-              Usted podrá observar y participar en cada fase del desarrollo y
-              aplicación de soluciones.
-            </p>
-          </div>
-          </li>
-          <!--item4-->
-          <li class="listtext__details-item">
-             <div class="listtextdiv">
-              <div class="rectangle">
+            </li>
+            <!--item4-->
+            <li class="listtext__details-item">
+              <div class="listtextdiv">
+                <div class="rectangle">
                   <svg class="astronauta">
-                  <use xlink:href="./images/icons.svg#icon-astronauta"></use>
-                </svg>
+                    <use xlink:href="./images/icons.svg#icon-astronauta"></use>
+                  </svg>
+                </div>
+                <h3 class="listtextcontent">TEGNOLOGÍA MODERNA</h3>
+                <p class="listtextcontentp">
+                  Usamos herramientas innovadoras para resolver las tareas
+                  asignadas. Es hora de simplificar los procesos laborales.
+                </p>
               </div>
-            <h3 class="listtextcontent">TEGNOLOGÍA MODERNA</h3>
-            <p class="listtextcontentp">
-              Usamos herramientas innovadoras para resolver las tareas
-              asignadas. Es hora de simplificar los procesos laborales.
-            </p>
-          </div>
-          </li>
-        </ul>
-            <!--fin-svg.list-->
-      </div>
-    </section>
-    <!--thirdsection-->
-    <!--listimages-->
-    <section class="listimg">
+            </li>
+          </ul>
+          <!--fin-svg.list-->
+        </div>
+      </section>
+      <!--thirdsection-->
+      <!--listimages-->
+      <section class="listimg">
         <div class="container">
-        <h2 class="listimg__title">A qué nos dedicamos</h2>
-        <ul class="listimg__details">
-          <li class="listimg__details-item">
-            <img
-             src="images/img1.jpg" 
-             alt="Imagen1" 
-             width="373" 
-             height="323" 
-             />
-            <div class="textimg">
-              <p class="textimg__details">APLICACIONES DE ESCRITORIO</p>
-            </div>
-          </li>
-          <li class="listimg__details-item">
-             <div class="textimg">
-              <p class="textimg__details">APLICACIONES MÓVILES</p>
-            </div>
-            <img src="images/img2.jpg" 
-            alt="Imagen 2" 
-            width="373" 
-            height="323" 
-            />
-          </li>
-          <li class="listimg__details-item">
-             <div class="textimg">
-              <p class="textimg__details">SOLUCIONES DE DISEÑO</p>
-            </div>
-            <img
-              src="images/img3.jpg"
-              alt="Imagen 3"  
-              width="373" 
-              height="323" 
+          <h2 class="listimg__title">A qué nos dedicamos</h2>
+          <ul class="listimg__details">
+            <li class="listimg__details-item">
+              <img
+                src="images/img1.jpg"
+                alt="Imagen1"
+                width="373"
+                height="323"
               />
-          </li>
-        </ul>
+              <div class="textimg">
+                <p class="textimg__details">APLICACIONES DE ESCRITORIO</p>
+              </div>
+            </li>
+            <li class="listimg__details-item">
+              <div class="textimg">
+                <p class="textimg__details">APLICACIONES MÓVILES</p>
+              </div>
+              <img
+                src="images/img2.jpg"
+                alt="Imagen 2"
+                width="373"
+                height="323"
+              />
+            </li>
+            <li class="listimg__details-item">
+              <div class="textimg">
+                <p class="textimg__details">SOLUCIONES DE DISEÑO</p>
+              </div>
+              <img
+                src="images/img3.jpg"
+                alt="Imagen 3"
+                width="373"
+                height="323"
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <!--fourthsection-->
       <section class="listteam">
         <div class="container">
-        <h2 class="listteam__title">Nuestro Equipo</h2>
-      <!--ullistteam-->
-      <!--firstcard-->
-        <ul class="listteam__details">
-          <li class="listteam__details-item">
-            <a href="#listteam" class="listteam__link">
-              <img
-                src="images/img4.jpg"
-                alt="Imagen4"
-                width="280"
-                height="270"/>
-            <div class="listteam_div">
-              <h3 class="listteam__details-h3">Andrés Cubo</h3>
-              <p class="listteam__details-p">Diseñador de Productos</p>
-            </div>
-              <!--iconssocialmedia.......list-->
-              <ul class="socialmediaicons">
-                <li>
-                  <div class="elipse">
-                  <svg class="instagram">
-                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                  </svg></div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="twitter">
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="facebook">
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="linkedin">
-                      <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </div>
-                </li>
+          <h2 class="listteam__title">Nuestro Equipo</h2>
+          <!--ullistteam-->
+          <!--firstcard-->
+          <ul class="listteam__details">
+            <li class="listteam__details-item">
+              <a href="#listteam" class="listteam__link">
+                <img
+                  src="images/img4.jpg"
+                  alt="Imagen4"
+                  width="280"
+                  height="270"
+                />
+                <div class="listteam_div">
+                  <h3 class="listteam__details-h3">Andrés Cubo</h3>
+                  <p class="listteam__details-p">Diseñador de Productos</p>
+                </div>
+                <!--iconssocialmedia.......list-->
+                <ul class="socialmediaicons">
+                  <li>
+                    <div class="elipse">
+                      <svg class="instagram">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="twitter">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="facebook">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="linkedin">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
                 </ul>
                 <!--finaliconlist-->
-            </a>
-          </li>
-          <!--fourcard-->
-          <li class="listteam__details-item">
-            <a href="#listteam" class="listteam__link">
-              <img
-                src="images/img5.jpg"
-                alt="Imagen 5"
-                width="280"
-                height="270"/>
+              </a>
+            </li>
+            <!--fourcard-->
+            <li class="listteam__details-item">
+              <a href="#listteam" class="listteam__link">
+                <img
+                  src="images/img5.jpg"
+                  alt="Imagen 5"
+                  width="280"
+                  height="270"
+                />
                 <div class="listteam_div">
                   <h3 class="listteam__details-h3">Carla Palacios</h3>
                   <p class="listteam__details-p">Desarrolladora Frontend</p>
                 </div>
-              <!--iconssocialmedia.......list-->
-              <ul class="socialmediaicons">
-                <li>
-                  <div class="elipse">
-                  <svg class="instagram">
-                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                  </svg></div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="twitter">
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="facebook">
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="linkedin">
-                      <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </div>
-                </li>
+                <!--iconssocialmedia.......list-->
+                <ul class="socialmediaicons">
+                  <li>
+                    <div class="elipse">
+                      <svg class="instagram">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="twitter">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="facebook">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="linkedin">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
                 </ul>
                 <!--finaliconlist-->
               </a>
-          </li>
-          <!--secondcard-->
-          <li class="listteam__details-item">
-            <a href="#listteam" class="listteam__link">
-              <img
-                src="images/img6.jpg"
-                alt="Imagen 6"
-                width="280"
-                height="270"/>
+            </li>
+            <!--secondcard-->
+            <li class="listteam__details-item">
+              <a href="#listteam" class="listteam__link">
+                <img
+                  src="images/img6.jpg"
+                  alt="Imagen 6"
+                  width="280"
+                  height="270"
+                />
                 <div class="listteam_div">
-                <h3 class="listteam__details-h3">Mario Dorado</h3>
-                <p class="listteam__details-p">Marketing</p>
+                  <h3 class="listteam__details-h3">Mario Dorado</h3>
+                  <p class="listteam__details-p">Marketing</p>
                 </div>
                 <!--iconssocialmedia.......list-->
-              <ul class="socialmediaicons">
-                <li>
-                  <div class="elipse">
-                    <svg class="instagram">
-                      <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="twitter">
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="elipse">
-                    <svg class="facebook">
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="elipse">
-                    <svg class="linkedin">
-                      <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </div>
-                </li>
+                <ul class="socialmediaicons">
+                  <li>
+                    <div class="elipse">
+                      <svg class="instagram">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="twitter">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="facebook">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="linkedin">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
                 </ul>
                 <!--finaliconlist-->
-            </a>
-          </li>
-          <!--thirdcard-->
-          <li class="listteam__details-item">
-            <a href="#listteam" class="listteam__link">
-              <img
-                src="images/img7.jpg"
-                alt="Imagen7"
-                width="280"
-                height="270"/>
+              </a>
+            </li>
+            <!--thirdcard-->
+            <li class="listteam__details-item">
+              <a href="#listteam" class="listteam__link">
+                <img
+                  src="images/img7.jpg"
+                  alt="Imagen7"
+                  width="280"
+                  height="270"
+                />
                 <div class="listteam_div">
-                <h3 class="listteam__details-h3">Pablo Mijangos</h3>
-                <p class="listteam__details-p">Diseñador IU</p>
+                  <h3 class="listteam__details-h3">Pablo Mijangos</h3>
+                  <p class="listteam__details-p">Diseñador IU</p>
                 </div>
-              <!--iconssocialmedia.......list-->
-              <ul class="socialmediaicons">
-                <li>
-                  <div class="elipse">
-                    <svg class="instagram">
-                      <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </div>
-                </li>
-                 <li>
-                  <div class="elipse">
-                    <svg class="twitter">
-                      <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="elipse">
-                    <svg class="facebook">
-                      <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="elipse">
-                    <svg class="linkedin">
-                      <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </div>
-                </li>
+                <!--iconssocialmedia.......list-->
+                <ul class="socialmediaicons">
+                  <li>
+                    <div class="elipse">
+                      <svg class="instagram">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="twitter">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="facebook">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="elipse">
+                      <svg class="linkedin">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </div>
+                  </li>
                 </ul>
-              <!--finaliconlist-->
-            </a>
+                <!--finaliconlist-->
+              </a>
+            </li>
+          </ul>
+          <!--finalullistteam-->
+        </div>
+      </section>
+      <!--fivesecction-->
+      <section class="usualcostumers">
+        <h2 class="usualcostumers-title">Clientes regulares</h2>
+        <!--usualcostumerslist-->
+        <!--1caja-->
+        <ul class="usualcostumers-list">
+          <li class="list-itemcostumers">
+            <div class="caja">
+              <svg class="company-1">
+                <use xlink:href="./images/icons.svg#icon-company-1"></use>
+              </svg>
+            </div>
+          </li>
+          <!--2caja-->
+          <li>
+            <div class="caja">
+              <svg class="company-2">
+                <use xlink:href="./images/icons.svg#icon-company-2"></use>
+              </svg>
+            </div>
+          </li>
+          <!--3caja-->
+          <li>
+            <div class="caja">
+              <svg class="company-3">
+                <use xlink:href="./images/icons.svg#icon-company-3"></use>
+              </svg>
+            </div>
+          </li>
+          <!--4caja-->
+          <li>
+            <div class="caja">
+              <svg class="company-4">
+                <use xlink:href="./images/icons.svg#icon-company-4"></use>
+              </svg>
+            </div>
+          </li>
+          <!--5caja-->
+          <li>
+            <div class="caja">
+              <svg class="company-5">
+                <use xlink:href="./images/icons.svg#icon-company-5"></use>
+              </svg>
+            </div>
+          </li>
+          <!--6caja-->
+          <li>
+            <div class="caja">
+              <svg class="company-6">
+                <use xlink:href="./images/icons.svg#icon-company-6"></use>
+              </svg>
+            </div>
           </li>
         </ul>
-        <!--finalullistteam-->
-      </div>
-    </section>
-    <!--fivesecction-->
-    <section class="usualcostumers">
-      <h2 class="usualcostumers-title">Clientes regulares</h2>
-      <!--usualcostumerslist-->
-      <!--1caja-->
-      <ul class="usualcostumers-list">
-        <li class="list-itemcostumers">
-          <div class="caja">
-            <svg class="company-1">
-              <use xlink:href="./images/icons.svg#icon-company-1"></use>
-            </svg>
-          </div>
-        </li>
-      <!--2caja-->
-        <li>
-          <div class="caja">
-            <svg class="company-2">
-              <use xlink:href="./images/icons.svg#icon-company-2"></use>
-            </svg>
-          </div>
-        </li>
-        <!--3caja-->
-        <li>
-          <div class="caja">
-            <svg class="company-3">
-              <use xlink:href="./images/icons.svg#icon-company-3"></use>
-            </svg>
-          </div>
-        </li>
-        <!--4caja-->
-        <li>
-          <div class="caja">
-            <svg class="company-4">
-              <use xlink:href="./images/icons.svg#icon-company-4"></use>
-            </svg>
-          </div>
-        </li>
-        <!--5caja-->
-        <li>
-          <div class="caja">
-            <svg class="company-5">
-              <use xlink:href="./images/icons.svg#icon-company-5"></use>
-            </svg>
-          </div>
-        </li>
-        <!--6caja-->
-        <li>
-          <div class="caja">
-            <svg class="company-6">
-              <use xlink:href="./images/icons.svg#icon-company-6"></use>
-            </svg>
-          </div>
-        </li>
-        </ul>
-    </section>
-  </main>
-  <!--footer-->
-<footer class="footer">
-    <div class="container">
-      <div class="column1">
-        <a href="./index.html" class="footer__list-textlogo">Web<span class="web">Studio</span></a>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="column1">
+          <a href="./index.html" class="footer__list-textlogo"
+            >Web<span class="web">Studio</span></a
+          >
           <address>
             <ul class="footer__address">
               <li class="footer__address-list--active">
-                <a href="https://goo.gl/maps/ngCgHBpQpBZ551xf8" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de <br>México, CDMX, México</a>
+                <a
+                  href="https://goo.gl/maps/ngCgHBpQpBZ551xf8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Calz. Ticomán 500, Ciudad de <br />México, CDMX, México</a
+                >
               </li>
               <li class="footer__address-list">
-                <a href="mailto:info@devstudio.com" >
-                 info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
               </li>
               <li class="footer__address-list">
-                 <a href="tel:+525555296000">+52 55 5529 6000</a>
+                <a href="tel:+525555296000">+52 55 5529 6000</a>
               </li>
             </ul>
-         </address>
-      </div>
-      <div class="column2">
-        <!--footersocialmedialist-->
-        <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
-        <ul class="socialmedia-footer">
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="instagram">
-                <use xlink: href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="twitter">
-                <use xlink: href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="facebook">
-                <use xlink: href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </div>
-          </li>
+          </address>
+        </div>
+        <div class="column2">
+          <!--footersocialmedialist-->
+          <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
+          <ul class="socialmedia-footer">
             <li class="item-socialmedia">
               <div class="elipse">
-                <svg class="linkedin">
-                  <use xlink: href="./images/icons.svg#icon-linkedin"></use>
+                <svg class="instagram">
+                  <use xlink:href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
-        </ul>
+            <li class="item-socialmedia">
+              <div class="elipse">
+                <svg class="twitter">
+                  <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-socialmedia">
+              <div class="elipse">
+                <svg class="facebook">
+                  <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-socialmedia">
+              <div class="elipse">
+                <svg class="linkedin">
+                  <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
