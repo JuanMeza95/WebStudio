@@ -185,9 +185,26 @@ li {
     margin-left: 5px;
 }
 
-.header__listcontact-item:hover,
-.header__listcontact-item:focus {
+
+
+.icon-celdiv,
+.icon-sobrediv {
+    display: flex;
+}
+
+.icon-celdiv:hover a,
+.icon-sobrediv:hover a,
+.icon-celdiv:focus a,
+.icon-sobrediv:focus a {
     color: #2196F3;
+
+}
+
+.icon-celdiv:hover svg,
+.icon-sobrediv:hover svg,
+.icon-celdiv:focus svg,
+.icon-sobrediv:focus svg {
+    fill: #2196F3;
 }
 
 
@@ -203,9 +220,6 @@ li {
 
 
 
-.icon:hover {
-    fill: #2196F3;
-}
 
 .iconsobre {
     width: 16px;
@@ -217,9 +231,7 @@ li {
 }
 
 
-.iconsobre:hover {
-    fill: #2196F3;
-}
+
 
 /**hero**/
 .hero {
@@ -506,13 +518,13 @@ li {
 }
 
 .elipse:hover {
-    border-radius: 50%;
     background-color: #2196F3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
+
+.elipse:hover svg {
+    fill: #ffffff;
+}
+
 
 .instagram {
     width: 20px;
@@ -521,9 +533,7 @@ li {
     fill: #AFB1B8;
 }
 
-.instagram:hover {
-    fill: #FFF;
-}
+
 
 .twitter {
     width: 20px;
@@ -532,9 +542,7 @@ li {
     fill: #AFB1B8;
 }
 
-.twitter:hover {
-    fill: #FFF;
-}
+
 
 .facebook {
     width: 20px;
@@ -543,9 +551,6 @@ li {
     fill: #AFB1B8;
 }
 
-.facebook:hover {
-    fill: #FFF;
-}
 
 .linkedin {
     width: 20px;
@@ -554,9 +559,7 @@ li {
     fill: #AFB1B8;
 }
 
-.linkedin:hover {
-    fill: #FFF;
-}
+
 
 .socialmediaicons {
     list-style: none;
@@ -631,6 +634,16 @@ li {
     margin: 15px;
 }
 
+.caja:hover svg,
+.caja:focus svg {
+    border-color: #2196F3;
+}
+
+.caja:hover svg,
+.caja:focus svg {
+    fill: #2196F3;
+}
+
 .usualcostumers .usualcostumers-list .caja:hover {
     border: 1px solid #2196F3;
 }
@@ -642,9 +655,7 @@ li {
     fill: #AFB1B8;
 }
 
-.company-1:hover {
-    fill: #2196F3;
-}
+
 
 .company-2 {
     width: 106px;
@@ -653,9 +664,7 @@ li {
     fill: #AFB1B8;
 }
 
-.company-2:hover {
-    fill: #2196F3;
-}
+
 
 .company-3 {
     width: 106px;
@@ -664,9 +673,6 @@ li {
     fill: #AFB1B8;
 }
 
-.company-3:hover {
-    fill: #2196F3;
-}
 
 .company-4 {
     width: 106px;
@@ -675,9 +681,7 @@ li {
     fill: #AFB1B8;
 }
 
-.company-4:hover {
-    fill: #2196F3;
-}
+
 
 .company-5 {
     width: 106px;
@@ -686,9 +690,7 @@ li {
     fill: #AFB1B8;
 }
 
-.company-5:hover {
-    fill: #2196F3;
-}
+
 
 .company-6 {
     width: 106px;
@@ -697,9 +699,7 @@ li {
     fill: #AFB1B8;
 }
 
-.company-6:hover {
-    fill: #2196F3;
-}
+
 
 /*footer*/
 footer {

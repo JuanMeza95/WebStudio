@@ -19,262 +19,303 @@
     />
     <!--enlace scc-->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
     <title>STUDIO</title>
   </head>
   <body>
     <!--header -->
     <header class="header">
       <div class="container">
-      <a href="./index.html" class="logo">Web<span class="web">Studio</span></a>
-      <nav>
-        <ul class="header__listnav">
+        <a href="./index.html" class="logo"
+          >Web<span class="web">Studio</span></a
+        >
+        <nav>
+          <ul class="header__listnav">
+            <li>
+              <a href="index.html" class="header__listnav-item">Estudio</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="header__listnav-item"
+                >Portafolio</a
+              >
+            </li>
+            <li>
+              <a href="#footer" class="header__listnav-item">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__listcontact">
           <li>
-            <a href="index.html" class="header__listnav-item">Estudio</a>
+            <div class="icon-celdiv">
+              <a href="tel:+525555296000">
+                <svg class="icon">
+                  <use xlink:href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </a>
+              <a href="tel:+525555296000" class="header__listcontact-item">
+                +52 55 5529 6000
+              </a>
+            </div>
           </li>
           <li>
-            <a href="portafolio.html" class="header__listnav-item">Portafolio</a>
-          </li>
-          <li>
-            <a href="#footer" class="header__listnav-item">Contactos</a>
+            <div class="icon-sobrediv">
+              <a href="mailto:info@devstudio.com">
+                <svg class="iconsobre">
+                  <use xlink:href="./images/icons.svg#icon-sobre"></use>
+                </svg>
+              </a>
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__listcontact-item"
+              >
+                info@devstudio.com
+              </a>
+            </div>
           </li>
         </ul>
-      </nav>
-      <ul class="header__listcontact">
-        <li>
-          <a href="tel:+525555296000">
-            <svg class="icon">
-              <use xlink: href="./images/icons.svg#icon-tel"></use>
-            </svg>
-          </a> 
-          <a href="tel:+525555296000" class="header__listcontact-item">
-             +52 55 5529 6000 </a>
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <svg class="iconsobre">
-              <use xlink: href="./images/icons.svg#icon-sobre"></use>
-            </svg></a>
-          <a href="mailto:info@devstudio.com" class="header__listcontact-item">
-         info@devstudio.com</a
-          >
-        </li>
-      </ul>
       </div>
     </header>
     <!--Main-->
     <main>
       <section class="sectioneone">
         <div class="container">
-      <!--firstsecction-->
-      <ul class="main__btnlist">
-        <li><button  class="main__btnlist-item">Todo</button></li>
-        <li><button  class="main__btnlist-item">Sitios-Web</button></li>
-        <li><button  class="main__btnlist-item">Aplicaciones</button></li>
-        <li><button  class="main__btnlist-item">Diseño</button></li>
-        <li><button  class="main__btnlist-item">Marketing</button></li>
-      </ul>
-      <!--secondsection-->
-      <ul class="main__cards">
-      <!--card-1-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-              src="images/por1.jpg"
-              alt="Imagen1"
-              width="370"
-              height="310"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Tecnoduck</h4>
-              <p class="main__card-contentp">Sitio-web</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <!--card-2-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img href="#"
-              src="images/por2.jpg"
-              alt="Imagen2"
-              width="370"
-              height="294">
-              <div class="main__carddivpadding"> 
-              <h4 class="main__card-content">Póster de Nueva Orleans vs Estrella Dorada</h4>
-              <p class="main__card-contentp">Diseño</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        <!--card-3-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-              src="images/por3.jpg"
-              alt="Imagen3"
-              width="370"
-              height="310"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Restaurante Seafood</h4>
-              <p class="main__card-contentp">Aplicaciones</p>
-              </div>
-            </div>
-          </a>
-        </li>
-          <!--card-4-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-              src="images/por4.jpg"
-              alt="Imagen4"
-              width="370"
-              height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Proyecto prime</h4>
-              <p class="main__card-contentp">Marketing</p>
-              </div> 
-            </div>
-          </a>
-        </li>
-          <!--card-5-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-               src="images/por5.jpg"
-               alt="Imagen5"
-               width="370"
-               height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Proyecto cajas</h4>
-              <p class="main__card-contentp">Aplicaciones</p>
-              </div>
-            </div>
-          </a>
-        </li>
-          <!--card-6-->
-        <li class="main__card-div">
-          <a href="#">
-            <div>
-              <img
-              src="images/por6.jpg"
-              alt="Imagen6"
-              width="370"
-              height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">La inspiración no tiene limites</h4>
-              <p class="main__card-contentp">Sitio-web</p>
-              </div>
-            </div>
-          </a>
-        </li>
-          <!--card-7-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-              src="images/por7.jpg"
-              alt="Imagen7"
-              width="370"
-              height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Edición limitada</h4>
-              <p class="main__card-contentp">Diseño</p>
-              </div>
-            </div>
-          </a>
-        </li>
-          <!--card-8-->
-        <li class="main__card-div">
-          <a href="#">
-            <div class="card">
-              <img
-              src="images/por8.jpg"
-              alt="Imagen8"
-              width="370"
-              height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Proyecto LAB</h4>
-              <p class="main__card-contentp">Marketing</p>
-              </div>
-            </div>
-         </a>
-        </li>
-          <!--card-9-->
-        <li class="main__card-div">
-          <a href="#">
-            <div>
-              <img
-              src="images/por9.jpg"
-              alt="Imagen9"
-              width="370"
-              height="294"/>
-              <div class="main__carddivpadding">
-              <h4 class="main__card-content">Negocio en Crecimiento</h4>
-              <p class="main__card-contentp">Aplicaciones</p>
-              </div>
-            </div>
-          </a>
-        </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <!--footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="column1">
-        <a href="./index.html" class="footer__list-textlogo">Web<span class="web">Studio</span></a>
+          <!--firstsecction-->
+          <ul class="main__btnlist">
+            <li><button class="main__btnlist-item">Todo</button></li>
+            <li><button class="main__btnlist-item">Sitios-Web</button></li>
+            <li><button class="main__btnlist-item">Aplicaciones</button></li>
+            <li><button class="main__btnlist-item">Diseño</button></li>
+            <li><button class="main__btnlist-item">Marketing</button></li>
+          </ul>
+          <!--secondsection-->
+          <ul class="main__cards">
+            <!--card-1-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por1.jpg"
+                    alt="Imagen1"
+                    width="370"
+                    height="310"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Tecnoduck</h4>
+                    <p class="main__card-contentp">Sitio-web</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-2-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    href="#"
+                    src="images/por2.jpg"
+                    alt="Imagen2"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">
+                      Póster de Nueva Orleans vs Estrella Dorada
+                    </h4>
+                    <p class="main__card-contentp">Diseño</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-3-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por3.jpg"
+                    alt="Imagen3"
+                    width="370"
+                    height="310"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Restaurante Seafood</h4>
+                    <p class="main__card-contentp">Aplicaciones</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-4-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por4.jpg"
+                    alt="Imagen4"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Proyecto prime</h4>
+                    <p class="main__card-contentp">Marketing</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-5-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por5.jpg"
+                    alt="Imagen5"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Proyecto cajas</h4>
+                    <p class="main__card-contentp">Aplicaciones</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-6-->
+            <li class="main__card-div">
+              <a href="#">
+                <div>
+                  <img
+                    src="images/por6.jpg"
+                    alt="Imagen6"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">
+                      La inspiración no tiene limites
+                    </h4>
+                    <p class="main__card-contentp">Sitio-web</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-7-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por7.jpg"
+                    alt="Imagen7"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Edición limitada</h4>
+                    <p class="main__card-contentp">Diseño</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-8-->
+            <li class="main__card-div">
+              <a href="#">
+                <div class="card">
+                  <img
+                    src="images/por8.jpg"
+                    alt="Imagen8"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Proyecto LAB</h4>
+                    <p class="main__card-contentp">Marketing</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--card-9-->
+            <li class="main__card-div">
+              <a href="#">
+                <div>
+                  <img
+                    src="images/por9.jpg"
+                    alt="Imagen9"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="main__carddivpadding">
+                    <h4 class="main__card-content">Negocio en Crecimiento</h4>
+                    <p class="main__card-contentp">Aplicaciones</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="column1">
+          <a href="./index.html" class="footer__list-textlogo"
+            >Web<span class="web">Studio</span></a
+          >
           <address>
             <ul class="footer__address">
               <li class="footer__address-list--active">
-                <a href="https://goo.gl/maps/ngCgHBpQpBZ551xf8" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de <br>México, CDMX, México</a>
+                <a
+                  href="https://goo.gl/maps/ngCgHBpQpBZ551xf8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Calz. Ticomán 500, Ciudad de <br />México, CDMX, México</a
+                >
               </li>
               <li class="footer__address-list">
-                <a href="mailto:info@devstudio.com" >
-                 info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
               </li>
               <li class="footer__address-list">
-                 <a href="tel:+525555296000">+52 55 5529 6000</a>
+                <a href="tel:+525555296000">+52 55 5529 6000</a>
               </li>
             </ul>
-         </address>
-      </div>
-      <div class="column2">
-        <!--footersocialmedialist-->
-        <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
-        <ul class="socialmedia-footer">
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="instagram">
-                <use xlink:href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="twitter">
-                <use xlink:href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="item-socialmedia">
-            <div class="elipse">
-              <svg class="facebook">
-                <use xlink:href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </div>
-          </li>
+          </address>
+        </div>
+        <div class="column2">
+          <!--footersocialmedialist-->
+          <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
+          <ul class="socialmedia-footer">
             <li class="item-socialmedia">
-              <div class="elipse">
-                <svg class="linkedin">
-                  <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </div>
+              <a href="https://www.instagram.com" target="_blank">
+                <div class="elipse">
+                  <svg class="instagram">
+                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="item-socialmedia">
+              <a href="https://www.twitter.com" target="_blank">
+                <div class="elipse">
+                  <svg class="twitter">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="item-socialmedia">
+              <a href="https://www.facebook.com" target="_blank">
+                <div class="elipse">
+                  <svg class="facebook">
+                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="item-socialmedia">
+              <a href="https://www.linkedin.com" target="_blank">
+                <div class="elipse">
+                  <svg class="linkedin">
+                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
