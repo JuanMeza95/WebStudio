@@ -633,6 +633,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .elipse:hover {
@@ -651,6 +652,7 @@ li {
     height: 20px;
     flex-shrink: 0;
     fill: #AFB1B8;
+    cursor: pointer;
 }
 
 
@@ -660,6 +662,7 @@ li {
     height: 20px;
     flex-shrink: 0;
     fill: #AFB1B8;
+    cursor: pointer;
 }
 
 
@@ -669,6 +672,7 @@ li {
     height: 20px;
     flex-shrink: 0;
     fill: #AFB1B8;
+    cursor: pointer;
 }
 
 
@@ -677,6 +681,7 @@ li {
     height: 20px;
     flex-shrink: 0;
     fill: #AFB1B8;
+    cursor: pointer;
 }
 
 
@@ -753,6 +758,7 @@ li {
     justify-content: space-around;
     align-items: center;
     margin: 15px;
+    cursor: pointer;
 }
 
 .caja:hover svg,
