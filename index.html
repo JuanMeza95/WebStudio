@@ -32,7 +32,7 @@
         <nav>
           <ul class="header__listnav">
             <li>
-              <a href="index.html" class="header__listnav-item">Estudio</a>
+              <a href="index.html" class="header__listnav-item after">Estudio</a>
             </li>
             <li>
               <a href="portafolio.html" class="header__listnav-item"
@@ -81,8 +81,14 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="hero_btn">Solicite nuestro servicio</button>
+          <button class="hero_btn"  data-modal-open>Solicite nuestro servicio</button>
         </div>
+     <div class="modal is-hidden" data-modal >  
+      <div class="modal-container">
+         <button class="close" data-modal-close>X</button>
+          <p class="modaltext">Deje sus datos, nos contactaremos con usted</p>
+      </div>
+    </div>
       </section>
       <!--secondsection-->
       <!--svglisttext-->
@@ -594,5 +600,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
