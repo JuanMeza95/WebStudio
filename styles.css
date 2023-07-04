@@ -163,7 +163,7 @@ li {
 .header__listnav-item:hover,
 .header__listnav-item:focus {
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__listnav .after {
@@ -233,7 +233,7 @@ li {
 .icon-celdiv:focus a,
 .icon-sobrediv:focus a {
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -242,7 +242,7 @@ li {
 .icon-celdiv:focus svg,
 .icon-sobrediv:focus svg {
     fill: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -338,7 +338,7 @@ li {
 .hero_btn:focus {
     background-color: #F5F4FA;
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*modal*/
@@ -377,25 +377,58 @@ li {
     z-index: 1500;
 }
 
-.modal-container .close {
+.elipse-cerrar {
     border-radius: 30px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    background-color: #FFF;
-    color: #2196F3;
+    position: relative;
     width: 30px;
     height: 30px;
-    position: absolute;
-    right: 8px;
-    top: 6.5px;
-    cursor: pointer;
+
+    margin-left: 488px;
+    margin-top: 8px;
+
 }
 
-.modal-container .close:hover,
-.modal-container .close:focus {
+.elipse-cerrar:hover,
+.elipse-cerrar:focus,
+.close:hover .icon-cerrar {
     background-color: #2196F3;
-    color: white;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #EEEEEE;
 }
+
+.close:hover .icon-cerrar {
+    fill: #ffffff;
+}
+
+.modal-container .icon-cerrar {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 8px;
+    margin-left: 490px;
+    cursor: pointer;
+    fill: #2196F3;
+    margin-top: -3px;
+    margin-right: 490px;
+}
+
+.modal-container .close {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+}
+
 
 .modal-container .modaltext {
     color: #212121;
@@ -405,7 +438,7 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 38.5px;
+    padding-top: 2.5px;
     padding-left: 41px;
     padding-right: 39px;
 }
@@ -494,9 +527,6 @@ li {
     margin-top: 10px;
     width: 270px;
 }
-
-
-
 
 
 
@@ -638,12 +668,12 @@ li {
 
 .elipse:hover {
     background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .elipse:hover svg {
     fill: #ffffff;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -705,7 +735,7 @@ li {
 
 .listteam__details-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .listteam__details-item h3,
@@ -770,12 +800,12 @@ li {
 .caja:hover svg,
 .caja:focus svg {
     fill: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .usualcostumers .usualcostumers-list .caja:hover {
     border: 1px solid #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-1 {
@@ -934,7 +964,7 @@ footer {
 
 .item-socialmedia .elipse:hover {
     background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -977,7 +1007,7 @@ footer {
     color: white;
     background-color: #2196F3;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*imagesmosaic*/
@@ -1052,7 +1082,7 @@ footer {
 
 .main__card-div:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main__card-content {
