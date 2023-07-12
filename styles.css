@@ -350,6 +350,7 @@ li {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.20);
     z-index: 1000;
+    display: block;
     /*visibilidad*/
     visibility: hidden;
     opacity: 0;
@@ -389,7 +390,6 @@ li {
     width: 30px;
     height: 30px;
     margin-left: 488px;
-    margin-top: -6px;
     padding: 0;
 
 }
@@ -429,18 +429,256 @@ li {
 
 }
 
+/*formmodal*/
+.modal-form-group {
+    margin-top: 22px;
+    border: none;
+    position: relative;
+    width: 448px;
+    margin-left: 22px;
 
-.modal-container .modaltext {
+}
+
+.modal-form-group .modal-form-title {
+
     color: #212121;
     text-align: center;
-    font-size: 20px;
     font-family: Roboto;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 2.5px;
-    padding-left: 41px;
-    padding-right: 39px;
+
+
+}
+
+/*user*/
+
+
+#user-input {
+
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    text-indent: 42px;
+
+}
+
+
+
+#user-input:focus {
+    outline: none;
+    border-color: #2196F3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-form-group .username {
+
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+
+.modal-form-group .username .persona {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 26px;
+    right: 426px;
+    fill: #212121;
+}
+
+
+#user-input:focus+.username .persona {
+    fill: #2196F3;
+    transition: cfill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*telefono*/
+#user-telefono {
+
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    text-indent: 42px;
+}
+
+
+
+#user-telefono:focus {
+    outline: none;
+    border-color: #2196F3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-form-group .usertelefono {
+
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+
+.modal-form-group .usertelefono .telefono {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 26px;
+    right: 426px;
+    fill: #212121;
+}
+
+
+#user-input:focus+.usertelefono .telefono {
+    fill: #2196F3;
+}
+
+/*email*/
+
+#user-email {
+
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    text-indent: 42px;
+}
+
+
+
+#user-email:focus {
+    outline: none;
+    border-color: #2196F3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-form-group .useremail {
+
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+
+.modal-form-group .useremail .email {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 26px;
+    right: 426px;
+    fill: #212121;
+}
+
+
+#user-input:focus+.useremail .email {
+    fill: #2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*textarea*/
+
+.comentarios {
+    width: 422px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding: 12px 16px 12px 16px;
+}
+
+.comentarios:focus {
+    outline: none;
+    border-color: #2196F3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-group .usercomentarios {
+
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+/*confirmacion*/
+.modal-form-group .checkbox {
+
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    position: relative;
+    justify-content: center;
+
+}
+
+/*BUTTON*/
+.modal-form-group .form-button {
+    width: 200px;
+    height: 50px;
+    margin-left: 125px;
+    margin-top: 12px;
+    border-radius: 4px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+}
+
+.modal-form-group .form-button:hover {
+    background-color: #fff;
+    color: #188CE8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/*divform*/
+.modal-form-group .div-form {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+.checkboxform {
+    margin-left: 41px;
 }
 
 /*main, list of details, only text in this section*/
@@ -938,6 +1176,10 @@ footer {
     margin-top: 75px;
 }
 
+.column2 {
+    margin-top: 0px;
+}
+
 .footer .column2 .socialmedia-footer {
     list-style: none;
     display: flex;
@@ -970,6 +1212,7 @@ footer {
 /*column3*/
 .column3 {
     margin-left: 93px;
+    margin-top: 27px;
 }
 
 .column3 .footer-form-group {
@@ -985,6 +1228,8 @@ footer {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 20px;
+
 }
 
 .column3 input::placeholder {
@@ -998,16 +1243,25 @@ footer {
     padding-left: 16px;
 }
 
-
-.column3 input[type="text"] {
+.column3 input {
     width: 358px;
     height: 50px;
-    flex-shrink: 0;
+}
+
+.column3 input[type="text"] {
+
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-right: 12px;
+    padding-left: 16px;
+}
+
+.column3 input[type="text"].active {
+    color: #ffffff;
+    padding-left: 16px;
+
 }
 
 .footer-form-group .footer-form-button {
@@ -1044,6 +1298,8 @@ footer {
     font-style: normal;
     margin-right: 20px;
 }
+
+
 
 .footer-form-group .footer-form-button>.enviar {
     height: 24px;

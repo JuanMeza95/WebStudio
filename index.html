@@ -96,6 +96,79 @@
                 </svg>
               </div>
             </button>
+            <form name="modal-form" autocomplete="on" novalidate>
+              <fieldset class="modal-form-group">
+                <legend class="modal-form-title">
+                  Deje sus datos, nos contactaremos con usted
+                </legend>
+                <div
+                  class="div-form"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
+                  <label for="user-input" class="username">
+                    Nombre
+                    <svg class="persona">
+                      <use xlink:href="./images/icons.svg#icon-persona"></use>
+                    </svg>
+                    <input type="text" id="user-input" name="user" />
+                  </label>
+                </div>
+                <div
+                  class="div-form"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
+                  <label for="user-telefono" class="usertelefono">
+                    Teléfono
+                    <svg class="telefono">
+                      <use xlink:href="./images/icons.svg#icon-telefono"></use>
+                    </svg>
+                    <input type="tel" id="user-telefono" name="user-telefono" />
+                  </label>
+                </div>
+                <div role="group" aria-labelledby="contact-details-head">
+                  <label for="user-email" class="useremail">
+                    E-mail
+                    <svg class="email">
+                      <use xlink:href="./images/icons.svg#icon-sobre"></use>
+                    </svg>
+                    <input type="email" id="user-email" name="user-email" />
+                  </label>
+                </div>
+                <div
+                  class="div-form"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
+                  <label for="user-comentarios" class="usercomentarios">
+                    Comentarios
+                    <textarea
+                      class="comentarios"
+                      name="comentarios"
+                      rows="6"
+                      placeholder="Introduzca su texto..."
+                    ></textarea>
+                  </label>
+                </div>
+                <div
+                  class="div-form checkboxform"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
+                  <label for="check" class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="confirmacion"
+                      value="confirmacion"
+                    />
+                    Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones
+                  </label>
+                </div>
+                <button type="submit" class="form-button">Enviar</button>
+              </fieldset>
+            </form>
           </div>
         </div>
       </section>
@@ -553,7 +626,7 @@
         </div>
         <!--form1-->
         <div class="column3">
-          <form class="footer-form">
+          <form name="footer-form" autocomplete="on" novalidate>
             <fieldset class="footer-form-group">
               <legend class="footer-form-title">
                 SUSCRÍBASE AL BOLETÍN INFORMATIVO
@@ -561,6 +634,7 @@
               <label>
                 <input
                   type="text"
+                  id="myinput"
                   name="usermail"
                   placeholder="Correo Electrónico"
                 />
