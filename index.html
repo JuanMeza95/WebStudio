@@ -90,17 +90,15 @@
         <div class="modal" data-modal>
           <div class="modal-container">
             <button class="close" data-modal-close>
-              <div class="elipse-cerrar">
-                <svg class="icon-cerrar">
-                  <use xlink:href="./images/icons.svg#icon-cerrar"></use>
-                </svg>
-              </div>
+              <svg class="icon-cerrar">
+                <use xlink:href="./images/icons.svg#icon-cerrar"></use>
+              </svg>
             </button>
             <form name="modal-form" autocomplete="on" novalidate>
-              <fieldset class="modal-form-group">
-                <legend class="modal-form-title">
+              <div class="modal-form-group">
+                <p class="modal-form-title">
                   Deje sus datos, nos contactaremos con usted
-                </legend>
+                </p>
                 <div
                   class="div-form"
                   role="group"
@@ -108,10 +106,16 @@
                 >
                   <label for="user-input" class="username">
                     Nombre
-                    <svg class="persona">
-                      <use xlink:href="./images/icons.svg#icon-persona"></use>
-                    </svg>
-                    <input type="text" id="user-input" name="user" />
+                    <div class="input-container">
+                      <div class="icon-container">
+                        <svg class="persona">
+                          <use
+                            xlink:href="./images/icons.svg#icon-persona"
+                          ></use>
+                        </svg>
+                      </div>
+                      <input type="text" id="user-input" name="user" />
+                    </div>
                   </label>
                 </div>
                 <div
@@ -119,21 +123,39 @@
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="user-telefono" class="usertelefono">
+                  <label for="user-telefono" class="user-telefono">
                     Teléfono
-                    <svg class="telefono">
-                      <use xlink:href="./images/icons.svg#icon-telefono"></use>
-                    </svg>
-                    <input type="tel" id="user-telefono" name="user-telefono" />
+                    <div class="input-container">
+                      <div class="icon-container">
+                        <svg class="telefono">
+                          <use
+                            xlink:href="./images/icons.svg#icon-telefono"
+                          ></use>
+                        </svg>
+                      </div>
+                      <input
+                        type="tel"
+                        id="user-telefono"
+                        name="user-telefono"
+                      />
+                    </div>
                   </label>
                 </div>
-                <div role="group" aria-labelledby="contact-details-head">
+                <div
+                  class="div-form"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
                   <label for="user-email" class="useremail">
                     E-mail
-                    <svg class="email">
-                      <use xlink:href="./images/icons.svg#icon-sobre"></use>
-                    </svg>
-                    <input type="email" id="user-email" name="user-email" />
+                    <div class="input-container">
+                      <div class="icon-container">
+                        <svg class="email">
+                          <use xlink:href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                      </div>
+                      <input type="email" id="user-email" name="user-email" />
+                    </div>
                   </label>
                 </div>
                 <div
@@ -143,6 +165,7 @@
                 >
                   <label for="user-comentarios" class="usercomentarios">
                     Comentarios
+
                     <textarea
                       class="comentarios"
                       name="comentarios"
@@ -162,12 +185,14 @@
                       name="confirmacion"
                       value="confirmacion"
                     />
-                    Estoy de acuerdo con el boletín informativo y acepto los
-                    Términos y Condiciones
+                    <p>
+                      de acuerdo con el boletín informativo y acepto los
+                      Términos y Condiciones
+                    </p>
                   </label>
                 </div>
                 <button type="submit" class="form-button">Enviar</button>
-              </fieldset>
+              </div>
             </form>
           </div>
         </div>
