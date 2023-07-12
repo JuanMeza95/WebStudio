@@ -47,5 +47,17 @@
     var personaIconElement = document.querySelector('.email');
     personaIconElement.style.fill = '#757575';
   });
+
+var usermailInput = document.getElementById('myinput');
+
+usermailInput.addEventListener('input', function() {
+  usermailInput.classList.add('active');
+});
+
+usermailInput.addEventListener('blur', function() {
+  if (usermailInput.value === '') {
+    usermailInput.classList.remove('active');
+  }
+});
    
 })();
