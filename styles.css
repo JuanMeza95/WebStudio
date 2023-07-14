@@ -421,10 +421,8 @@ li {
     padding-top: 0px;
     border: none;
     position: relative;
-    width: auto;
-    height: auto;
-    padding-left: 41px;
-    padding-right: 39px;
+    padding-left: 37px;
+    padding-right: 37px;
 
 }
 
@@ -701,6 +699,7 @@ li {
     font-weight: 700;
     letter-spacing: 0.09em;
     cursor: pointer;
+
 }
 
 .modal-form-group .form-button:hover {
@@ -714,11 +713,29 @@ li {
 .modal-form-group .div-form {
     margin-top: 12px;
     margin-bottom: 12px;
-    width: 400px;
+
+}
+
+.checkbox {
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
 }
 
 .checkboxform {
     margin-left: 41px;
+}
+
+.username .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+
 }
 
 /*main, list of details, only text in this section*/
