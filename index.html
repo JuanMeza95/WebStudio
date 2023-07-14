@@ -180,14 +180,22 @@
                   aria-labelledby="contact-details-head"
                 >
                   <label for="check" class="checkbox">
-                    <input
-                      type="checkbox"
-                      name="confirmacion"
-                      value="confirmacion"
-                    />
+                    <div class="icon-checkbox">
+                      <div
+                        id="rectanglecheckbox"
+                        class="rectangle-checkbox"
+                      ></div>
+                      <svg class="checkbox-svg hidden">
+                        <use
+                          xlink:href="./images/icons.svg#icon-revisado"
+                        ></use>
+                      </svg>
+                    </div>
                     <p>
-                      de acuerdo con el boletín informativo y acepto los
-                      Términos y Condiciones
+                      Estoy de acuerdo con el boletín informativo y acepto
+                      <span id="checkbox-span" class="checkboxspan">
+                        los Términos y Condiciones
+                      </span>
                     </p>
                   </label>
                 </div>
