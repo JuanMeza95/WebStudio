@@ -358,16 +358,16 @@ li {
     background-color: rgba(0, 0, 0, 0.20);
     z-index: 1000;
     /*visibilidad*/
-    opacity: 1;
-    pointer-events: unset;
-    visibility: visible
-        /*visibilidad*/
+    opacity: 0;
+    visibility: hidden;
+    /*visibilidad*/
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
 
+    opacity: 1;
+    pointer-events: unset;
+    visibility: visible
 }
 
 .modal-container {
