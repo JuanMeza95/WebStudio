@@ -25,32 +25,34 @@
   <body>
     <!--header -->
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="web">Studio</span></a
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo"
+          >Web<span class="header__logo--web">Studio</span></a
         >
         <nav>
-          <ul class="header__listnav">
+          <ul class="header__navigation">
             <li>
-              <a href="index.html" class="header__listnav-item after"
+              <a
+                href="index.html"
+                class="header__navigation__item header__navigation__item--after"
                 >Estudio</a
               >
             </li>
             <li>
-              <a href="portafolio.html" class="header__listnav-item"
+              <a href="portafolio.html" class="header__navigation__item"
                 >Portafolio</a
               >
             </li>
             <li>
-              <a href="#footer" class="header__listnav-item">Contactos</a>
+              <a href="#footer" class="header__navigation__item">Contactos</a>
             </li>
           </ul>
         </nav>
         <ul class="header__listcontact">
-          <li>
-            <div class="icon-celdiv">
+          <li class="header__listcontact__item">
+            <div class="header__listcontact__item__icon-cel">
               <a href="tel:+525555296000">
-                <svg class="icon">
+                <svg class="icon-cel">
                   <use xlink:href="./images/icons.svg#icon-tel"></use>
                 </svg>
               </a>
@@ -59,10 +61,10 @@
               </a>
             </div>
           </li>
-          <li>
-            <div class="icon-sobrediv">
+          <li class="header__listcontact__item">
+            <div class="header__listcontact__item__icon-sobre">
               <a href="mailto:info@devstudio.com">
-                <svg class="iconsobre">
+                <svg class="icon-sobre">
                   <use xlink:href="./images/icons.svg#icon-sobre"></use>
                 </svg>
               </a>
@@ -83,61 +85,63 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="hero_btn" data-modal-open>
+          <button class="hero__btn" data-modal-open>
             Solicite nuestro servicio
           </button>
         </div>
         <div class="modal is-hidden" data-modal>
-          <div class="modal-container">
-            <button
-              class="modal-button-close modal-button"
-              type="button"
-              data-modal-close
-            >
-              <svg class="modal-button-icon-close" width="11" height="11">
+          <div class="modal__container">
+            <button class="modal__button" type="button" data-modal-close>
+              <svg class="icon-close" width="11" height="11">
                 <use href="./images/icons.svg#icon-cerrar"></use>
               </svg>
             </button>
-            <form name="modal-form" autocomplete="on" novalidate>
-              <div class="modal-form-group">
-                <p class="modal-form-title">
+            <form name="modal__form" autocomplete="on" novalidate>
+              <div class="modal__form__group">
+                <p class="modal__form__title">
                   Deje sus datos, nos contactaremos con usted
                 </p>
                 <div
-                  class="div-form"
+                  class="modal__form__div"
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="user-input" class="username">
+                  <label for="user-input" class="modal__form__label">
                     Nombre
-                    <div class="input-container">
-                      <div class="icon-container">
-                        <svg class="persona">
+                    <div class="modal__form__input-container">
+                      <div class="modal__form__icon-container">
+                        <svg class="modal__form__svg">
                           <use
                             xlink:href="./images/icons.svg#icon-persona"
                           ></use>
                         </svg>
                       </div>
-                      <input type="text" id="user-input" name="user" />
+                      <input
+                        class="modal__form__input"
+                        type="text"
+                        id="user-input"
+                        name="user"
+                      />
                     </div>
                   </label>
                 </div>
                 <div
-                  class="div-form"
+                  class="modal__form__div"
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="user-telefono" class="user-telefono">
+                  <label for="user-telefono" class="modal__form__label">
                     Teléfono
-                    <div class="input-container">
-                      <div class="icon-container">
-                        <svg class="telefono">
+                    <div class="modal__form__input-container">
+                      <div class="modal__form__icon-container">
+                        <svg class="modal__form__svg">
                           <use
                             xlink:href="./images/icons.svg#icon-telefono"
                           ></use>
                         </svg>
                       </div>
                       <input
+                        class="modal__form__input"
                         type="tel"
                         id="user-telefono"
                         name="user-telefono"
@@ -146,32 +150,37 @@
                   </label>
                 </div>
                 <div
-                  class="div-form"
+                  class="modal__form__div"
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="user-email" class="useremail">
+                  <label for="user-email" class="modal__form__label">
                     E-mail
-                    <div class="input-container">
-                      <div class="icon-container">
-                        <svg class="email">
+                    <div class="modal__form__input-container">
+                      <div class="modal__form__icon-container">
+                        <svg class="modal__form__svg">
                           <use xlink:href="./images/icons.svg#icon-email"></use>
                         </svg>
                       </div>
-                      <input type="email" id="user-email" name="user-email" />
+                      <input
+                        class="modal__form__input"
+                        type="email"
+                        id="user-email"
+                        name="user-email"
+                      />
                     </div>
                   </label>
                 </div>
                 <div
-                  class="div-form"
+                  class="modal__form__div"
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="user-comentarios" class="usercomentarios">
+                  <label for="user-comentarios" class="modal__form__label">
                     Comentarios
 
                     <textarea
-                      class="comentarios"
+                      class="modal__form__input--textarea"
                       name="comentarios"
                       rows="6"
                       placeholder="Introduzca su texto..."
@@ -179,15 +188,15 @@
                   </label>
                 </div>
                 <div
-                  class="div-form checkboxform"
+                  class="modal__form__div"
                   role="group"
                   aria-labelledby="contact-details-head"
                 >
-                  <label for="check" class="checkbox">
+                  <label for="check" class="modal__form__label--checkbox">
                     <div class="icon-checkbox">
                       <div
-                        id="rectanglecheckbox"
-                        class="rectangle-checkbox"
+                        id="rectangle-checkbox"
+                        class="modal__form__label__rectangle-checkbox"
                       ></div>
                       <svg class="checkbox-svg hidden">
                         <use
@@ -197,110 +206,124 @@
                     </div>
                     <p>
                       Estoy de acuerdo con el boletín informativo y acepto
-                      <span id="checkbox-span" class="checkboxspan">
+                      <span
+                        id="checkbox-span"
+                        class="modal__form__label--checkbox-span"
+                      >
                         los Términos y Condiciones
                       </span>
                     </p>
                   </label>
                 </div>
-                <button type="submit" class="form-button">Enviar</button>
+                <div
+                  class="modal__form__div"
+                  role="group"
+                  aria-labelledby="contact-details-head"
+                >
+                  <button type="submit" class="modal__form__button">
+                    Enviar
+                  </button>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </section>
-      <!--secondsection-->
-      <!--svglisttext-->
+      <!----------------------------------------------------secondsection------------------------------------->
+      <!-------------------------------------------svg----------listtext------------------------------------>
       <section class="listtext">
         <div class="container">
           <h2 hidden>Beneficios de nuestros servicios</h2>
-          <!--tituloinvisible-inicio-lista-->
+          <!----------------------------------------------tituloinvisible-inicio-lista------------>
           <ul class="listtext__details">
-            <!--item1-->
+            <!--------------------------item1-->
             <li class="listtext__details-item">
-              <div class="listtextdiv">
-                <div class="rectangle">
-                  <svg class="antena">
+              <div class="listtext__details-div">
+                <div class="listtext__details-rectangle">
+                  <svg class="listtext__details__svg">
                     <use xlink:href="./images/icons.svg#icon-antena"></use>
                   </svg>
                 </div>
-                <h3 class="listtextcontent">ATENCIÓN A LOS DETALLES</h3>
-                <p class="listtextcontentp">
+                <h3 class="listtext__content-title">ATENCIÓN A LOS DETALLES</h3>
+                <p class="listtext__content-text">
                   Nos adentramos en todos los detalles y procesos de su negocio,
                   para así desarrollar una solución a su medida.
                 </p>
               </div>
             </li>
-            <!--item2-->
+            <!---------------------------------item2-->
             <li class="listtext__details-item">
-              <div class="listtextdiv">
-                <div class="rectangle">
-                  <svg class="reloj">
+              <div class="listtext__details-div">
+                <div class="listtext__details-rectangle">
+                  <svg class="listtext__details__svg">
                     <use xlink:href="./images/icons.svg#icon-reloj"></use>
                   </svg>
                 </div>
-                <h3 class="listtextcontent">PUNTUALIDAD</h3>
-                <p class="listtextcontentp">
+                <h3 class="listtext__content-title">PUNTUALIDAD</h3>
+                <p class="listtext__content-text">
                   Con nosotros, usted puede sentirse seguro y protegido. Un
                   principio importante de la empresa: respetar su tiempo y
                   respetar los plazos acordados.
                 </p>
               </div>
             </li>
-            <!--item3-->
+            <!--------------------------------item3-->
             <li class="listtext__details-item">
-              <div class="listtextdiv">
-                <div class="rectangle">
-                  <svg class="diagrama">
+              <div class="listtext__details-div">
+                <div class="listtext__details-rectangle">
+                  <svg class="listtext__details__svg">
                     <use xlink:href="./images/icons.svg#icon-diagrama"></use>
                   </svg>
                 </div>
-                <h3 class="listtextcontent">PLANIFICACIÓN</h3>
-                <p class="listtextcontentp">
+                <h3 class="listtext__content-title">PLANIFICACIÓN</h3>
+                <p class="listtext__content-text">
                   Usted podrá observar y participar en cada fase del desarrollo
                   y aplicación de soluciones.
                 </p>
               </div>
             </li>
-            <!--item4-->
+            <!----------------------item4-->
             <li class="listtext__details-item">
-              <div class="listtextdiv">
-                <div class="rectangle">
-                  <svg class="astronauta">
+              <div class="listtext__details-div">
+                <div class="listtext__details-rectangle">
+                  <svg class="listtext__details__svg">
                     <use xlink:href="./images/icons.svg#icon-astronauta"></use>
                   </svg>
                 </div>
-                <h3 class="listtextcontent">TEGNOLOGÍA MODERNA</h3>
-                <p class="listtextcontentp">
+                <h3 class="listtext__content-title">TEGNOLOGÍA MODERNA</h3>
+                <p class="listtext__content-text">
                   Usamos herramientas innovadoras para resolver las tareas
                   asignadas. Es hora de simplificar los procesos laborales.
                 </p>
               </div>
             </li>
           </ul>
-          <!--fin-svg.list-->
         </div>
       </section>
-      <!--thirdsection-->
-      <!--listimages-->
-      <section class="listimg">
+      <!-----------------------------------------------------------------thirdsection-------------------------------->
+      <!----------------------------------------------------------------------------------listimages----------------------->
+      <section class="list-images">
         <div class="container">
-          <h2 class="listimg__title">A qué nos dedicamos</h2>
-          <ul class="listimg__details">
-            <li class="listimg__details-item">
+          <h2 class="list-images__title">A qué nos dedicamos</h2>
+          <ul class="list-images__details">
+            <li class="list-images__details__item">
               <img
                 src="images/img1.jpg"
                 alt="Imagen1"
                 width="373"
                 height="323"
               />
-              <div class="textimg">
-                <p class="textimg__details">APLICACIONES DE ESCRITORIO</p>
+              <div class="list-images__details__div">
+                <p class="list-images__details__div__text">
+                  APLICACIONES DE ESCRITORIO
+                </p>
               </div>
             </li>
-            <li class="listimg__details-item">
-              <div class="textimg">
-                <p class="textimg__details">APLICACIONES MÓVILES</p>
+            <li class="list-images__details__item">
+              <div class="list-images__details__div">
+                <p class="list-images__details__div__text">
+                  APLICACIONES MÓVILES
+                </p>
               </div>
               <img
                 src="images/img2.jpg"
@@ -309,9 +332,11 @@
                 height="323"
               />
             </li>
-            <li class="listimg__details-item">
-              <div class="textimg">
-                <p class="textimg__details">SOLUCIONES DE DISEÑO</p>
+            <li class="list-images__details__item">
+              <div class="list-images__details__div">
+                <p class="list-images__details__div__text">
+                  SOLUCIONES DE DISEÑO
+                </p>
               </div>
               <img
                 src="images/img3.jpg"
@@ -323,14 +348,14 @@
           </ul>
         </div>
       </section>
-      <!--fourthsection-->
+      <!---------------------------------------------fourthsection---------------------------------------------------->
       <section class="listteam">
         <div class="container">
           <h2 class="listteam__title">Nuestro Equipo</h2>
           <!--ullistteam-->
           <!--firstcard-->
           <ul class="listteam__details">
-            <li class="listteam__details-item">
+            <li class="listteam__details__item">
               <a href="#listteam" class="listteam__link">
                 <img
                   src="images/img4.jpg"
@@ -338,12 +363,12 @@
                   width="280"
                   height="270"
                 />
-                <div class="listteam_div">
-                  <h3 class="listteam__details-h3">Andrés Cubo</h3>
-                  <p class="listteam__details-p">Diseñador de Productos</p>
+                <div class="listteam__div">
+                  <h3 class="listteam__div__name">Andrés Cubo</h3>
+                  <p class="listteam__div__text">Diseñador de Productos</p>
                 </div>
                 <!--iconssocialmedia.......list-->
-                <ul class="socialmediaicons">
+                <ul class="listteam__socialmedia">
                   <li>
                     <div class="elipse">
                       <svg class="instagram">
@@ -383,7 +408,7 @@
               </a>
             </li>
             <!--fourcard-->
-            <li class="listteam__details-item">
+            <li class="listteam__details__item">
               <a href="#listteam" class="listteam__link">
                 <img
                   src="images/img5.jpg"
@@ -391,12 +416,12 @@
                   width="280"
                   height="270"
                 />
-                <div class="listteam_div">
-                  <h3 class="listteam__details-h3">Carla Palacios</h3>
-                  <p class="listteam__details-p">Desarrolladora Frontend</p>
+                <div class="listteam__div">
+                  <h3 class="listteam__div__name">Carla Palacios</h3>
+                  <p class="listteam__div__text">Desarrolladora Frontend</p>
                 </div>
                 <!--iconssocialmedia.......list-->
-                <ul class="socialmediaicons">
+                <ul class="listteam__socialmedia">
                   <li>
                     <div class="elipse">
                       <svg class="instagram">
@@ -432,11 +457,10 @@
                     </div>
                   </li>
                 </ul>
-                <!--finaliconlist-->
               </a>
             </li>
             <!--secondcard-->
-            <li class="listteam__details-item">
+            <li class="listteam__details__item">
               <a href="#listteam" class="listteam__link">
                 <img
                   src="images/img6.jpg"
@@ -444,12 +468,12 @@
                   width="280"
                   height="270"
                 />
-                <div class="listteam_div">
-                  <h3 class="listteam__details-h3">Mario Dorado</h3>
-                  <p class="listteam__details-p">Marketing</p>
+                <div class="listteam__div">
+                  <h3 class="listteam__div__name">Mario Dorado</h3>
+                  <p class="listteam__div__text">Marketing</p>
                 </div>
                 <!--iconssocialmedia.......list-->
-                <ul class="socialmediaicons">
+                <ul class="listteam__socialmedia">
                   <li>
                     <div class="elipse">
                       <svg class="instagram">
@@ -489,7 +513,7 @@
               </a>
             </li>
             <!--thirdcard-->
-            <li class="listteam__details-item">
+            <li class="listteam__details__item">
               <a href="#listteam" class="listteam__link">
                 <img
                   src="images/img7.jpg"
@@ -497,12 +521,12 @@
                   width="280"
                   height="270"
                 />
-                <div class="listteam_div">
-                  <h3 class="listteam__details-h3">Pablo Mijangos</h3>
-                  <p class="listteam__details-p">Diseñador IU</p>
+                <div class="listteam__div">
+                  <h3 class="listteam__div__name">Pablo Mijangos</h3>
+                  <p class="listteam__div__text">Diseñador IU</p>
                 </div>
                 <!--iconssocialmedia.......list-->
-                <ul class="socialmediaicons">
+                <ul class="listteam__socialmedia">
                   <li>
                     <div class="elipse">
                       <svg class="instagram">
@@ -538,62 +562,60 @@
                     </div>
                   </li>
                 </ul>
-                <!--finaliconlist-->
               </a>
             </li>
           </ul>
-          <!--finalullistteam-->
         </div>
       </section>
-      <!--fivesecction-->
+      <!---------------------------------------------------------------------------fivesecction------------------------->
       <section class="usualcostumers">
-        <h2 class="usualcostumers-title">Clientes regulares</h2>
+        <h2 class="usualcostumers__title">Clientes regulares</h2>
         <!--usualcostumerslist-->
         <!--1caja-->
-        <ul class="usualcostumers-list">
-          <li class="list-itemcostumers">
-            <div class="caja">
-              <svg class="company-1">
+        <ul class="usualcostumers__list">
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-1"></use>
               </svg>
             </div>
           </li>
-          <!--2caja-->
-          <li>
-            <div class="caja">
-              <svg class="company-2">
+          <!--2usualcostumers__list__div-->
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-2"></use>
               </svg>
             </div>
           </li>
-          <!--3caja-->
-          <li>
-            <div class="caja">
-              <svg class="company-3">
+          <!--3usualcostumers__list__div-->
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-3"></use>
               </svg>
             </div>
           </li>
-          <!--4caja-->
-          <li>
-            <div class="caja">
-              <svg class="company-4">
+          <!--4usualcostumers__list__div-->
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-4"></use>
               </svg>
             </div>
           </li>
-          <!--5caja-->
-          <li>
-            <div class="caja">
-              <svg class="company-5">
+          <!--5usualcostumers__list__div-->
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-5"></use>
               </svg>
             </div>
           </li>
-          <!--6caja-->
-          <li>
-            <div class="caja">
-              <svg class="company-6">
+          <!--6usualcostumers__list__div-->
+          <li class="usualcostumers__list__item">
+            <div class="usualcostumers__list__div">
+              <svg class="usualcostumers__list__div__item">
                 <use xlink:href="./images/icons.svg#icon-company-6"></use>
               </svg>
             </div>
@@ -601,16 +623,16 @@
         </ul>
       </section>
     </main>
-    <!--footer-->
+    <!----------------------------------------------------------footer--------------------------------------------->
     <footer class="footer">
       <div class="container">
-        <div class="column1">
-          <a href="./index.html" class="footer__list-textlogo"
-            >Web<span class="web">Studio</span></a
+        <div class="footer__column1">
+          <a href="./index.html" class="footer__textlogo"
+            >Web<span class="footer__textlogo--web">Studio</span></a
           >
           <address>
             <ul class="footer__address">
-              <li class="footer__address-list--active">
+              <li class="footer__address__list--active">
                 <a
                   href="https://goo.gl/maps/ngCgHBpQpBZ551xf8"
                   target="_blank"
@@ -618,41 +640,41 @@
                   >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
                 >
               </li>
-              <li class="footer__address-list">
+              <li class="footer__address__list">
                 <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
               </li>
-              <li class="footer__address-list">
+              <li class="footer__address__list">
                 <a href="tel:+525555296000">+52 55 5529 6000</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="column2">
+        <div class="footer__column2">
           <!--footersocialmedialist-->
-          <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
-          <ul class="socialmedia-footer">
-            <li class="item-socialmedia">
+          <h5 class="footer__socialmedia">ENCUENTRANOS EN</h5>
+          <ul class="footer__socialmedia-list">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="instagram">
                   <use xlink:href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="twitter">
                   <use xlink:href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="facebook">
                   <use xlink:href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="linkedin">
                   <use xlink:href="./images/icons.svg#icon-linkedin"></use>
@@ -662,10 +684,10 @@
           </ul>
         </div>
         <!--form1-->
-        <div class="column3">
-          <form name="footer-form" autocomplete="on" novalidate>
-            <fieldset class="footer-form-group">
-              <legend class="footer-form-title">
+        <div class="footer__column3">
+          <form name="footer__form" autocomplete="on" novalidate>
+            <fieldset class="footer__form__group">
+              <legend class="footer__form__title">
                 SUSCRÍBASE AL BOLETÍN INFORMATIVO
               </legend>
               <label>
@@ -676,8 +698,8 @@
                   placeholder="Correo Electrónico"
                 />
               </label>
-              <button type="submit" class="footer-form-button">
-                <p class="submit-text1">Suscríbase</p>
+              <button type="submit" class="footer__form__button">
+                <p class="footer__form__button--submit">Suscríbase</p>
                 <svg class="enviar">
                   <use xlink:href="./images/icons.svg#icon-enviar"></use>
                 </svg>
