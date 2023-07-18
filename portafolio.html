@@ -25,30 +25,36 @@
   <body>
     <!--header -->
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="web">Studio</span></a
+      <div class="header__container container">
+        <a href="./index.html" class="header__logo"
+          >Web<span class="header__logo--web">Studio</span></a
         >
         <nav>
-          <ul class="header__listnav">
+          <ul class="header__navigation">
             <li>
-              <a href="index.html" class="header__listnav-item">Estudio</a>
+              <a
+                href="index.html"
+                class="header__navigation__item header__navigation__item"
+                >Estudio</a
+              >
             </li>
             <li>
-              <a href="portafolio.html" class="header__listnav-item after-2"
+              <a
+                href="portafolio.html"
+                class="header__navigation__item header__navigation__item--after-2"
                 >Portafolio</a
               >
             </li>
             <li>
-              <a href="#footer" class="header__listnav-item">Contactos</a>
+              <a href="#footer" class="header__navigation__item">Contactos</a>
             </li>
           </ul>
         </nav>
         <ul class="header__listcontact">
-          <li>
-            <div class="icon-celdiv">
+          <li class="header__listcontact__item">
+            <div class="header__listcontact__item__icon-cel">
               <a href="tel:+525555296000">
-                <svg class="icon">
+                <svg class="icon-cel">
                   <use xlink:href="./images/icons.svg#icon-tel"></use>
                 </svg>
               </a>
@@ -57,10 +63,10 @@
               </a>
             </div>
           </li>
-          <li>
-            <div class="icon-sobrediv">
+          <li class="header__listcontact__item">
+            <div class="header__listcontact__item__icon-sobre">
               <a href="mailto:info@devstudio.com">
-                <svg class="iconsobre">
+                <svg class="icon-sobre">
                   <use xlink:href="./images/icons.svg#icon-sobre"></use>
                 </svg>
               </a>
@@ -75,24 +81,24 @@
         </ul>
       </div>
     </header>
-    <!--Main-->
+    <!---------------------------------------------------------Main------------------------------------------------->
     <main>
-      <section class="sectioneone">
+      <section class="section-one">
         <div class="container">
           <!--firstsecction-->
           <ul class="main__btnlist">
-            <li><button class="main__btnlist-item">Todo</button></li>
-            <li><button class="main__btnlist-item">Sitios-Web</button></li>
-            <li><button class="main__btnlist-item">Aplicaciones</button></li>
-            <li><button class="main__btnlist-item">Diseño</button></li>
-            <li><button class="main__btnlist-item">Marketing</button></li>
+            <li><button class="main__btnlist__item">Todo</button></li>
+            <li><button class="main__btnlist__item">Sitios-Web</button></li>
+            <li><button class="main__btnlist__item">Aplicaciones</button></li>
+            <li><button class="main__btnlist__item">Diseño</button></li>
+            <li><button class="main__btnlist__item">Marketing</button></li>
           </ul>
-          <!--secondsection-->
+          <!---------------------------------------------------------------secondsection---------------------------------->
           <ul class="main__cards">
             <!--card-1-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="cmain__card__div-card">
                   <img
                     class="imgcard"
                     src="images/por1.jpg"
@@ -108,17 +114,17 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Tecnoduck</h4>
-                    <p class="main__card-contentp">Sitio-web</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">Tecnoduck</h4>
+                    <p class="main__card__content-text">Sitio-web</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-2-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     href="#"
                     src="images/por2.jpg"
@@ -134,19 +140,19 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">
                       Póster de Nueva Orleans vs Estrella Dorada
                     </h4>
-                    <p class="main__card-contentp">Diseño</p>
+                    <p class="main__card__content-text">Diseño</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-3-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     src="images/por3.jpg"
                     alt="Imagen3"
@@ -161,17 +167,19 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Restaurante Seafood</h4>
-                    <p class="main__card-contentp">Aplicaciones</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">
+                      Restaurante Seafood
+                    </h4>
+                    <p class="main__card__content-text">Aplicaciones</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-4-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     src="images/por4.jpg"
                     alt="Imagen4"
@@ -186,17 +194,17 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Proyecto prime</h4>
-                    <p class="main__card-contentp">Marketing</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">Proyecto prime</h4>
+                    <p class="main__card__content-text">Marketing</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-5-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     src="images/por5.jpg"
                     alt="Imagen5"
@@ -211,17 +219,17 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Proyecto cajas</h4>
-                    <p class="main__card-contentp">Aplicaciones</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">Proyecto cajas</h4>
+                    <p class="main__card__content-text">Aplicaciones</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-6-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div>
+                <div class="main__card__div-card">
                   <img
                     src="images/por6.jpg"
                     alt="Imagen6"
@@ -236,19 +244,19 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">
                       La inspiración no tiene limites
                     </h4>
-                    <p class="main__card-contentp">Sitio-web</p>
+                    <p class="main__card__content-text">Sitio-web</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-7-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     src="images/por7.jpg"
                     alt="Imagen7"
@@ -263,17 +271,17 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Edición limitada</h4>
-                    <p class="main__card-contentp">Diseño</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">Edición limitada</h4>
+                    <p class="main__card__content-text">Diseño</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-8-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div class="card">
+                <div class="main__card__div-card">
                   <img
                     src="images/por8.jpg"
                     alt="Imagen8"
@@ -288,17 +296,17 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Proyecto LAB</h4>
-                    <p class="main__card-contentp">Marketing</p>
+                  <div class=".main__card-div__padding">
+                    <h4 class="main__card__content-title">Proyecto LAB</h4>
+                    <p class="main__card__content-text">Marketing</p>
                   </div>
                 </div>
               </a>
             </li>
             <!--card-9-->
-            <li class="main__card-div">
+            <li class="main__card__div">
               <a href="#">
-                <div>
+                <div class="main__card__div-card">
                   <img
                     src="images/por9.jpg"
                     alt="Imagen9"
@@ -313,9 +321,11 @@
                       seguros de la competencia.
                     </p>
                   </div>
-                  <div class="main__carddivpadding">
-                    <h4 class="main__card-content">Negocio en Crecimiento</h4>
-                    <p class="main__card-contentp">Aplicaciones</p>
+                  <div class="main__card-div__padding">
+                    <h4 class="main__card__content-title">
+                      Negocio en Crecimiento
+                    </h4>
+                    <p class="main__card__content-text">Aplicaciones</p>
                   </div>
                 </div>
               </a>
@@ -324,16 +334,16 @@
         </div>
       </section>
     </main>
-    <!--footer-->
+    <!----------------------------------------------------------footer--------------------------------------------->
     <footer class="footer">
       <div class="container">
-        <div class="column1">
-          <a href="./index.html" class="footer__list-textlogo"
-            >Web<span class="web">Studio</span></a
+        <div class="footer__column1">
+          <a href="./index.html" class="footer__textlogo"
+            >Web<span class="footer__textlogo--web">Studio</span></a
           >
           <address>
             <ul class="footer__address">
-              <li class="footer__address-list--active">
+              <li class="footer__address__list--active">
                 <a
                   href="https://goo.gl/maps/ngCgHBpQpBZ551xf8"
                   target="_blank"
@@ -341,41 +351,41 @@
                   >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
                 >
               </li>
-              <li class="footer__address-list">
+              <li class="footer__address__list">
                 <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
               </li>
-              <li class="footer__address-list">
+              <li class="footer__address__list">
                 <a href="tel:+525555296000">+52 55 5529 6000</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="column2">
+        <div class="footer__column2">
           <!--footersocialmedialist-->
-          <h5 class="titlesocialmedia">ENCUENTRANOS EN</h5>
-          <ul class="socialmedia-footer">
-            <li class="item-socialmedia">
+          <h5 class="footer__socialmedia">ENCUENTRANOS EN</h5>
+          <ul class="footer__socialmedia-list">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="instagram">
                   <use xlink:href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="twitter">
                   <use xlink:href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="facebook">
                   <use xlink:href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </div>
             </li>
-            <li class="item-socialmedia">
+            <li class="footer__socialmedia-list__item">
               <div class="elipse">
                 <svg class="linkedin">
                   <use xlink:href="./images/icons.svg#icon-linkedin"></use>
@@ -385,10 +395,10 @@
           </ul>
         </div>
         <!--form1-->
-        <div class="column3">
-          <form name="footer-form" autocomplete="on" novalidate>
-            <fieldset class="footer-form-group">
-              <legend class="footer-form-title">
+        <div class="footer__column3">
+          <form name="footer__form" autocomplete="on" novalidate>
+            <fieldset class="footer__form__group">
+              <legend class="footer__form__title">
                 SUSCRÍBASE AL BOLETÍN INFORMATIVO
               </legend>
               <label>
@@ -399,8 +409,8 @@
                   placeholder="Correo Electrónico"
                 />
               </label>
-              <button type="submit" class="footer-form-button">
-                <p class="submit-text1">Suscríbase</p>
+              <button type="submit" class="footer__form__button">
+                <p class="footer__form__button--submit">Suscríbase</p>
                 <svg class="enviar">
                   <use xlink:href="./images/icons.svg#icon-enviar"></use>
                 </svg>

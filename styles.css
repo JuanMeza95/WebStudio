@@ -213,6 +213,7 @@ li {
     bottom: 0px;
     width: 60px;
     left: 0.5px;
+    top: 74px;
 
 
 }
@@ -442,7 +443,7 @@ li {
 }
 
 .modal__form__group {
-    padding-top: 0px;
+    padding-top: 0oopx;
     border: none;
     position: relative;
     padding-left: 37px;
@@ -462,7 +463,7 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 38.5px;
+    margin-top: 0px;
     padding-bottom: 10px;
 
 
@@ -1270,9 +1271,12 @@ footer {
     fill: var(--white-color);
 }
 
+/*------------------------------------------------------in this point begins "portafolio"----imagesmosaic-portafolio------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
 /*portafolio*/
 /*bottomlist*/
-.sectionone .container {
+.section-one .container {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1289,7 +1293,7 @@ footer {
     margin-bottom: 56px;
 }
 
-.main__btnlist-item {
+.main__btnlist__item {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -1304,14 +1308,14 @@ footer {
     text-align: center;
 }
 
-.main__btnlist-item:hover {
+.main__btnlist__item:hover {
     color: var(--white-color);
     background-color: var(--color-blue);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*imagesmosaic*/
+/*---------------------------------------------------------imagesmosaic-portafolio--------------------*/
 
 .container .main__cards {
 
@@ -1329,7 +1333,7 @@ footer {
 }
 
 
-.main__card-div {
+.main__card__div {
     background-color: var(--white-color);
     border: 1px solid var(--white-color);
     max-width: 370px;
@@ -1343,7 +1347,7 @@ footer {
     overflow: hidden;
 }
 
-.card {
+.main__card__div-card {
     position: relative;
 
 }
@@ -1359,7 +1363,7 @@ footer {
     opacity: 0;
 }
 
-.main__card-div:hover .overlay {
+.main__card__div:hover .overlay {
     transform: translateY(0);
     transition: transform 250ms ease-in-out;
     opacity: 1;
@@ -1377,16 +1381,25 @@ footer {
     padding: 63px 24px;
 }
 
-.main__carddivpadding {
-    padding: 20px 24px;
-}
 
-.main__card-div:hover {
+.main__card__div:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__card-content {
+.main__card-div__padding {
+    margin: 20px 24px 20px 24px;
+}
+
+.main__card__content-title {
     text-align: left;
     margin-bottom: 1em;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.main__card__content-text {
+    text-align: left;
+    margin-bottom: 1em;
+    padding-left: 24px
 }
