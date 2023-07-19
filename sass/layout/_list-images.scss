@@ -1,0 +1,72 @@
+/*--------------------main images list only images "a que nos dedicamos"-------------*/
+
+.list-images {
+    margin: 0;
+    padding: 0;
+}
+
+.list-images .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    padding: auto;
+}
+
+.list-images .container .list-images__title {
+    padding-top: 94px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .list-images__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+
+.list-images__details__item {
+    position: relative;
+}
+
+.container .list-images__details .list-images__details__div {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    width: 373px;
+    flex-shrink: 0;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.80);
+    z-index: 500;
+
+}
+
+.container .list-images__details .list-images__details__div .list-images__details__div__text {
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 27px;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.list-images__details>.list-images__details__item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 46px) / 3);
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}

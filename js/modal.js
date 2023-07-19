@@ -11,50 +11,71 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
   }
+// Obtener los elementos de input y checkbox
+   // Obtener los elementos de input y checkbox
+      const userInput = document.getElementById('user-input');
+      const userTelefono = document.getElementById('user-telefono');
+      const userEmail = document.getElementById('user-email');
+      const checkbox = document.getElementById('rectangle-checkbox');
+      const checkboxSvg = document.querySelector('.checkbox-svg');
 
-  const userInput = document.getElementById('user-input');
-  const telefonoInput = document.getElementById('user-telefono');
-  const emailInput = document.getElementById('user-email');
-  const rect = document.querySelector('.rectangle-checkbox');
-  const svg = document.querySelector('.checkbox-svg');
+      // Función para aplicar el efecto de focus a los elementos de input y su respectivo icono SVG
+      function applyFocusEffect(inputElement, svgElement) {
+        inputElement.addEventListener('focus', function () {
+          svgElement.style.fill = '#2196F3';
+        });
 
-  userInput.addEventListener('focus', function() {
-    const personaIconElement = document.querySelector('.persona');
-    personaIconElement.style.fill = '#2196F3';
-  });
+        inputElement.addEventListener('blur', function () {
+          svgElement.style.fill = '#757575';
+        });
+      }
 
-  userInput.addEventListener('blur', function() {
-    const personaIconElement = document.querySelector('.persona');
-    personaIconElement.style.fill = '#757575';
-  });
+      // Aplicar efecto de focus a los elementos de input y sus respectivos iconos SVG
+      applyFocusEffect(userInput, document.querySelector('.persona'));
+      applyFocusEffect(userTelefono, document.querySelector('.telefono'));
+      applyFocusEffect(userEmail, document.querySelector('.email'));
 
-  telefonoInput.addEventListener('focus', function() {
-    const telefonoIconElement = document.querySelector('.telefono');
-    telefonoIconElement.style.fill = '#2196F3';
-  });
+      // Agregar evento de clic al checkbox
+      checkbox.addEventListener('click', function () {
+        checkboxSvg.classList.remove('hidden');
+        checkbox.classList.add('hidden');
+      });
 
-  telefonoInput.addEventListener('blur', function() {
-    const telefonoIconElement = document.querySelector('.telefono');
-    telefonoIconElement.style.fill = '#757575';
-  });
+      checkboxSvg.addEventListener('click', function () {
+        checkboxSvg.classList.add('hidden');
+        checkbox.classList.remove('hidden');
+      });
+  
+     const myInput = document.getElementById('myinput');
 
-  emailInput.addEventListener('focus', function() {
-    const emailIconElement = document.querySelector('.email');
-    emailIconElement.style.fill = '#2196F3';
-  });
+      // Agregar evento 'input' al input del footer
+      myInput.addEventListener('input', function () {
+        // Obtener el valor del input
+        const inputValue = this.value;
 
-  emailInput.addEventListener('blur', function() {
-    const emailIconElement = document.querySelector('.email');
-    emailIconElement.style.fill = '#757575';
-  });
+        // Verificar si el valor del input está vacío
+        if (inputValue.trim() === '') {
+          // Si está vacío, quitar la clase 'active'
+          this.classList.remove('active');
+        } else {
+          // Si no está vacío, agregar la clase 'active'
+          this.classList.add('active');
+        }
+      });
 
-  rect.addEventListener('click', function() {
-    svg.classList.remove('hidden');
-    rect.classList.add('hidden');
-  });
+      // Agregar evento 'focus' al input del footer
+      myInput.addEventListener('focus', function () {
+        // Al obtener el foco, asegurarse de que el input tenga la clase 'active'
+        this.classList.add('active');
+      });
 
-  svg.addEventListener('click', function() {
-    svg.classList.add('hidden');
-    rect.classList.remove('hidden');
-  });
-})();
+      // Agregar evento 'blur' al input del footer
+      myInput.addEventListener('blur', function () {
+        // Al perder el foco, verificar si el valor del input está vacío y quitar la clase 'active' si es necesario
+        const inputValue = this.value;
+        if (inputValue.trim() === '') {
+          this.classList.remove('active');
+        }
+      });
+    })();
+   

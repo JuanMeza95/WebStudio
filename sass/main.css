@@ -1,0 +1,13 @@
+@import url(./utils/_variables.scss);
+@import url(./base/_commons.scss);
+@import url(./base/_container.scss);
+@import url(./layout/_header.scss);
+@import url(./layout/_hero.scss);
+@import url(./components/_modal.scss);
+@import url(./components/_modal__form.scss);
+@import url(./layout/_list-images.scss);
+@import url(./layout/_list-team.scss);
+@import url(./layout/_usual-costumers.scss);
+@import url(./layout/_footer.scss);
+@import url(./layout/_portafolio-section-one.scss);
+@import url(./layout/_portafolio-cards.scss);/*# sourceMappingURL=main.css.map */
