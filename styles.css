@@ -297,7 +297,7 @@ li {
 /**---------------------------------hero----------------------------------------------------------**/
 
 .hero {
-    background-image: url(./images/Imagen.jpg);
+    background-image: url(../images/Imagen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
