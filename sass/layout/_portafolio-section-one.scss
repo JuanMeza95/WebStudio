@@ -9,10 +9,16 @@
 
 .main__btnlist {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     list-style: none;
     padding-top: 112px;
     margin-bottom: 56px;
+    @media screen and (min-width: 480px) {
+       display: flex;
+    justify-content: center;
+    }
+    
 }
 
 .main__btnlist__item {

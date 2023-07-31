@@ -1,12 +1,15 @@
-/*--------------------main images list only images "a que nos dedicamos"-------------*/
-
+@media screen and (max-width: 1200px) {
+    .list-images {
+        display: none;
+    }
+}
 .list-images {
     margin: 0;
     padding: 0;
 }
 
 .list-images .container {
-    max-width: 1200px;
+    max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;

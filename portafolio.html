@@ -18,61 +18,71 @@
       rel="stylesheet"
     />
     <!--enlace scc-->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="./sass/main.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <title>STUDIO</title>
   </head>
   <body>
     <!--header -->
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container">
         <a href="./index.html" class="header__logo"
           >Web<span class="header__logo--web">Studio</span></a
         >
-        <nav>
-          <ul class="header__navigation">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__menu" widht="40px" height="40px">
+            <use xlink:href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="header__nav">
             <li>
               <a
                 href="index.html"
-                class="header__navigation__item header__navigation__item"
+                class="header__nav__item header__nav__item--after"
                 >Estudio</a
               >
             </li>
             <li>
-              <a
-                href="portafolio.html"
-                class="header__navigation__item header__navigation__item--after-2"
-                >Portafolio</a
-              >
+              <a href="portafolio.html" class="header__nav__item">Portafolio</a>
             </li>
             <li>
-              <a href="#footer" class="header__navigation__item">Contactos</a>
+              <a href="#footer" class="header__nav__item">Contactos</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__listcontact">
-          <li class="header__listcontact__item">
-            <div class="header__listcontact__item__icon-cel">
-              <a href="tel:+525555296000">
+        <ul class="header__list-contact">
+          <li>
+            <!-- Contenedor para el ícono y el enlace -->
+            <div class="header__list-contact__item-container">
+              <a class="header__list-contact__item" href="tel:+525555296000">
                 <svg class="icon-cel">
                   <use xlink:href="./images/icons.svg#icon-tel"></use>
                 </svg>
               </a>
-              <a href="tel:+525555296000" class="header__listcontact-item">
+              <a href="tel:+525555296000" class="header__list-contact__item">
                 +52 55 5529 6000
               </a>
             </div>
           </li>
-          <li class="header__listcontact__item">
-            <div class="header__listcontact__item__icon-sobre">
-              <a href="mailto:info@devstudio.com">
+          <li>
+            <!-- Contenedor para el ícono y el enlace -->
+            <div class="header__list-contact__item-container">
+              <a
+                class="header__list-contact__item"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="icon-sobre">
                   <use xlink:href="./images/icons.svg#icon-sobre"></use>
                 </svg>
               </a>
               <a
                 href="mailto:info@devstudio.com"
-                class="header__listcontact-item"
+                class="header__list-contact__item"
               >
                 info@devstudio.com
               </a>

@@ -1,26 +1,45 @@
 footer {
-    background-color: #2F303A;
-    height: 252px;
+     background-color: #2F303A;
+     max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    @media screen and (min-width: 480px) {
+        max-width: 1200px;   
+
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;   
+    }
 }
 
 .footer .container {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+   max-width: 100%;
+   max-height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    
+    @media screen and (min-width: 480px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+@media screen and (min-width: 1200px) 
+{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 }
 
 .footer .footer__column1 {
     margin-top: 60px;
-    margin-left: 0px;
-    margin-right: 70px;
-
+    margin-bottom: 60px;
+   
 }
 
 
@@ -35,9 +54,13 @@ footer {
     letter-spacing: 0.03em;
     color: var(--color-blue);
     text-decoration: none;
-    text-align: left;
-    margin-top: 60px;
+    margin-left: 163px;
+    margin-right: 163px;
 
+@media screen and (min-width: 1200px) {
+    
+     margin-left: 47px;
+}
 
 }
 
@@ -48,7 +71,8 @@ footer {
 .footer__address {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
     text-decoration: none;
     font-size: 14px;
@@ -56,6 +80,14 @@ footer {
     line-height: 1.7;
     letter-spacing: 0.03em;
     margin-top: 14px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+@media screen and (min-width: 1200px) {
+    align-items: self-start;
+    margin-left: 47px;
+    
+}
 }
 
 
@@ -66,6 +98,7 @@ footer {
     font-family: Roboto;
     line-height: 24px;
     letter-spacing: 0.42px;
+    
 }
 
 
@@ -86,12 +119,22 @@ footer {
     text-transform: uppercase;
     margin: 10px;
     margin-top: 37px;
+    margin-left: 44px;
+    margin-right: 44px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+            margin-top: 0px;
+        
+    }
+
 
 
 }
 
 .footer__socialmedia-list__item {
     padding-right: 10px;
+
 }
 
 .footer__socialmedia-list__item svg {
@@ -112,11 +155,26 @@ footer {
     margin-left: 93px;
     margin-top: 72px;
     margin-right: 0px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 42px;
+        
+    }
 }
 
 .footer__column3 .footer__form__group {
     display: flex;
+    flex-direction: column;
     border: none;
+
+    @media screen and (min-width: 480px
+    ) {
+        flex-direction: column;
+    }
+     @media screen and (min-width: 1200px
+    ) {
+        flex-direction: row;
+    }
+    
 }
 
 .footer__form__group .footer__form__title {
@@ -128,6 +186,14 @@ footer {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-left: 60px;
+
+    @media screen and (min-width: 480px) {
+       margin-left: 100px; 
+    }
+       @media screen and (min-width: 1200px) {
+         margin-left: 0px;
+    }
 
 }
 
@@ -139,12 +205,18 @@ footer {
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.48px;
-    padding-left: 16px;
+   margin-bottom: 20px;
 }
 
 .footer__column3 input {
     width: 358px;
     height: 50px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+     @media screen and (min-width: 480px) {
+        width: 358px;
+    }
 }
 
 .footer__column3 input[type="text"] {
@@ -153,8 +225,13 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right: 12px;
+    margin-right: 95px;
     padding-left: 16px;
+       margin-right: 60px;
+    @media screen and (min-width: 1200px)
+     {
+     margin-right: 0px;
+    }
 }
 
 .footer__column3 input[type="text"].active {
@@ -176,7 +253,19 @@ footer {
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-right: 0px;
+ margin-top: 20px;
+ margin-left: 92px;
+ margin-right: 92px;
+
+ @media screen  and (min-width: 480px) {
+    margin-right: 137px;
+    margin-left: 137px;
+ }
+  @media screen  and (min-width: 480px) {
+    margin-right: 47px;
+    margin-left: 10px;
+    margin-top: 0px;
+ }
 }
 
 .footer__form__group .footer__form__button:hover {
