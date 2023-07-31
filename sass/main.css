@@ -313,6 +313,8 @@ li {
 
 .hero {
   position: relative;
+  background-image: url(../../images/Imagen.jpg);
+  background-repeat: no-repeat;
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.4);
   padding: 0;
@@ -339,8 +341,6 @@ li {
   }
 }
 .hero .container {
-  background-image: url(../../images/Imagen.jpg);
-  background-repeat: no-repeat;
   background-size: 480px 400px;
   display: flex;
   flex-direction: column;
