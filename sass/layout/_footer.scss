@@ -1,10 +1,9 @@
 footer {
      background-color: #2F303A;
      max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
+
    
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 481px) {
         max-width: 1200px;   
 
     }
@@ -14,7 +13,7 @@ footer {
     }
 }
 
-.footer .container {
+ .container {
    max-width: 100%;
    max-height: 100%;
     display: flex;
@@ -22,7 +21,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 481px) {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
@@ -152,11 +151,13 @@ footer {
 
 /*column3*/
 .footer__column3 {
-    margin-left: 93px;
+    margin-left: 0px;
     margin-top: 72px;
     margin-right: 0px;
+
     @media screen and (min-width: 1200px) {
         margin-top: 42px;
+      
         
     }
 }
@@ -164,10 +165,11 @@ footer {
 .footer__column3 .footer__form__group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
 
-    @media screen and (min-width: 480px
-    ) {
+    @media screen and (min-width: 481px) {
         flex-direction: column;
     }
      @media screen and (min-width: 1200px
@@ -186,9 +188,10 @@ footer {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-left: 60px;
+  text-align: center;
 
-    @media screen and (min-width: 480px) {
+
+    @media screen and (min-width: 481px) {
        margin-left: 100px; 
     }
        @media screen and (min-width: 1200px) {
@@ -209,12 +212,12 @@ footer {
 }
 
 .footer__column3 input {
-    width: 358px;
+    width: 450px;
     height: 50px;
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }
-     @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+
+   
+     @media screen and (min-width: 481px) {
         width: 358px;
     }
 }
@@ -225,13 +228,8 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right: 95px;
     padding-left: 16px;
-       margin-right: 60px;
-    @media screen and (min-width: 1200px)
-     {
-     margin-right: 0px;
-    }
+    
 }
 
 .footer__column3 input[type="text"].active {
@@ -253,19 +251,13 @@ footer {
     border: none;
     cursor: pointer;
     padding: 0;
- margin-top: 20px;
- margin-left: 92px;
- margin-right: 92px;
+ margin-bottom: 60px;
 
- @media screen  and (min-width: 480px) {
+ @media screen  and (min-width: 481px) {
     margin-right: 137px;
     margin-left: 137px;
  }
-  @media screen  and (min-width: 480px) {
-    margin-right: 47px;
-    margin-left: 10px;
-    margin-top: 0px;
- }
+
 }
 
 .footer__form__group .footer__form__button:hover {
