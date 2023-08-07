@@ -470,9 +470,6 @@ li {
   overflow: hidden;
   max-width: 480px;
   max-height: 400px;
-  background-image: url(../../images/Imagen.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (min-width: 480px) {

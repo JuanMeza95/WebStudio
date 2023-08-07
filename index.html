@@ -96,6 +96,26 @@
       <!--firstsection-->
       <section class="hero">
         <div class="container">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../goit-markup-hw-08/images/Imagen.jpg    1x,
+                ../goit-markup-hw-08/images/Imagen@2x.jpg 2x
+              "
+            />
+            <img
+              srcset="
+                ../goit-markup-hw-08/images/Imagen.jpg    1x,
+                ../goit-markup-hw-08/images/Imagen@2x.jpg 2x
+              "
+              src="../goit-markup-hw-08/images/Imagen.jpg"
+              width="480"
+              alt="image"
+              loading="lazy"
+            />
+          </picture>
+
           <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
           <button class="hero__btn" data-modal-open>
             Solicite nuestro servicio
