@@ -14,8 +14,7 @@ footer {
 }
 
  .container {
-   max-width: 100%;
-   max-height: 100%;
+ 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -56,9 +55,15 @@ footer {
     margin-left: 163px;
     margin-right: 163px;
 
+@media screen and (min-width: 768px) {
+    
+       margin-left: 115px;
+    margin-right: 234px;
+}
 @media screen and (min-width: 1200px) {
     
-     margin-left: 47px;
+       margin-left: 0px;
+    margin-right: 234px;
 }
 
 }
@@ -82,9 +87,15 @@ footer {
     margin-left: 60px;
     margin-right: 60px;
     
+    @media screen and (min-width: 768px) {
+    
+       margin-left: -60px;
+
+}
 @media screen and (min-width: 1200px) {
     align-items: self-start;
-    margin-left: 47px;
+    margin-left: 0px;
+    width: 231px;
     
 }
 }
@@ -101,7 +112,15 @@ footer {
 }
 
 
-
+.footer .footer__column2{
+    @media screen and (min-width: 768px) {
+    margin-top: -60px;
+}
+    @media screen and (min-width: 1200px) {
+    margin-top: -42px;
+    margin-left: -60px;
+}
+}
 
 .footer .footer__column2 .footer__socialmedia-list {
     list-style: none;
@@ -120,6 +139,16 @@ footer {
     margin-top: 37px;
     margin-left: 44px;
     margin-right: 44px;
+      @media screen and (min-width: 768px) {
+    
+       margin-right: 99px;
+
+}
+  @media screen and (min-width: 1200px) {
+    
+       margin-right: 0px;
+
+}
 
     @media screen and (min-width: 1200px) {
         margin-left: 0px;
@@ -157,6 +186,7 @@ footer {
 
     @media screen and (min-width: 1200px) {
         margin-top: 42px;
+            margin-left: 70px;
       
         
     }
@@ -191,11 +221,12 @@ footer {
   text-align: center;
 
 
-    @media screen and (min-width: 481px) {
-       margin-left: 100px; 
+
+    @media screen and (min-width: 768px) {
+       margin-left: 0px;
     }
        @media screen and (min-width: 1200px) {
-         margin-left: 0px;
+             margin-left: -230px;
     }
 
 }
@@ -219,6 +250,9 @@ footer {
    
      @media screen and (min-width: 481px) {
         width: 358px;
+    }
+      @media screen and (min-width: 1200px) {
+         margin-bottom: 58px;
     }
 }
 
@@ -256,6 +290,10 @@ footer {
  @media screen  and (min-width: 481px) {
     margin-right: 137px;
     margin-left: 137px;
+ }
+  @media screen  and (min-width: 1200px) {
+ 
+    margin-left: 10px;
  }
 
 }

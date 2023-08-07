@@ -46,14 +46,19 @@
     text-decoration: none;
     margin-top: 16px; 
     margin-bottom: 16px;
- 
-}
-
-@media screen and (min-width: 481px) and (max-width: 1199px) {
-    .header__logo {
+    margin-left: 0;
+    
+ @media screen and (min-width: 481px) and (max-width: 1199px) {
         margin-left: 0px;
     }
+
+    
+@media screen and (min-width: 1200) {
+       margin-left: 93px;
 }
+
+}
+
 
 
 
@@ -191,6 +196,7 @@
 @media screen and (min-width: 1200px) {
     .header__list-contact {
         display: flex;
+        margin-left: 306px;
     }
 }
 

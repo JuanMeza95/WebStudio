@@ -6,14 +6,11 @@
 .list-images {
     margin: 0;
     padding: 0;
+  
 }
-
-.list-images .container {
-    max-width: 1600px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-    padding: auto;
+.list-images .container{
+      display: flex;
+    flex-direction: column;
 }
 
 .list-images .container .list-images__title {
