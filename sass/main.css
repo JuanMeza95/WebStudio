@@ -213,6 +213,7 @@ li {
 .header__nav {
   display: flex;
   list-style: none;
+  margin-left: 32px;
 }
 
 @media screen and (max-width: 481px) {
@@ -265,7 +266,6 @@ li {
 .header__nav .header__nav__item--after-2 {
   position: relative;
   color: var(--color-blue);
-  margin-right: 30px;
 }
 
 .header__nav .header__nav__item--after-2:after {
