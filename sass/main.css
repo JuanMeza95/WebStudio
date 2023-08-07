@@ -12,6 +12,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 h1 {
   font-weight: 900;
@@ -237,11 +242,6 @@ li {
   color: var(--color-blue);
 }
 
-.header__nav .header__nav__item--after-2 {
-  position: relative;
-  color: var(--color-blue);
-}
-
 .header__nav .header__nav__item--after:after {
   position: absolute;
   content: "";
@@ -251,7 +251,6 @@ li {
   width: 42px;
   left: 0px;
 }
-
 @media screen and (min-width: 481px) and (max-width: 1199px) {
   .header__nav .header__nav__item--after:after {
     bottom: -35px;
@@ -259,9 +258,16 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .header__nav .header__nav__item--after:after {
-    bottom: -25px;
+    bottom: -20px;
   }
 }
+
+.header__nav .header__nav__item--after-2 {
+  position: relative;
+  color: var(--color-blue);
+  margin-right: 30px;
+}
+
 .header__nav .header__nav__item--after-2:after {
   position: absolute;
   content: "";
@@ -272,6 +278,19 @@ li {
   left: 70px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .header__nav .header__nav__item--after-2:after {
+    bottom: -35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav .header__nav__item--after-2:after {
+    width: 65px;
+    left: 0.5px;
+    top: 35px;
+    bottom: 0px;
+  }
+}
 .header__list-contact {
   list-style: none;
   display: none;
@@ -1613,11 +1632,8 @@ footer {
 }
 
 .section-one .container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__btnlist {
