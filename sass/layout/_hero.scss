@@ -10,7 +10,7 @@ margin-left: auto;
     justify-content: center;
     align-items: center;
   box-shadow: 0px 0px 0px 0px rgba(47, 48, 58, 0.40);
-    background-image: url(../../images/Imagen.jpg);
+    background-image: url(../images/Imagen.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 50% 50%;
@@ -32,7 +32,7 @@ background-position: 50% 50%;
     screen and (min-resolution: 2dppx){
 
      .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Imagen@2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imagen@2x.jpg);
     }
 }
 
