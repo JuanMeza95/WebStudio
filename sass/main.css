@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -194,7 +194,7 @@ li {
   margin-right: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
@@ -205,7 +205,7 @@ li {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header-nav {
     display: none;
   }
@@ -213,7 +213,7 @@ li {
 .header__nav {
   display: none;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
     margin-left: 0px;
@@ -294,7 +294,7 @@ li {
   list-style: none;
   display: none;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .header__list-contact {
     display: flex;
     flex-direction: column;
@@ -464,39 +464,39 @@ li {
 }
 
 .hero {
-  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.4);
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   box-shadow: 0px 0px 0px 0px rgba(47, 48, 58, 0.4);
-  overflow: hidden;
   background-image: url(../../images/Imagen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 480px) {
   .hero {
     max-width: 1200px;
-    max-height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    max-height: 600px;
   }
 }
-.hero .container {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Imagen@2x.jpg);
+  }
+}
 .hero__title {
   font-size: 26px;
   font-weight: 900;
@@ -504,7 +504,7 @@ li {
   line-height: 1;
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     font-size: 26px;
     font-weight: 900;
@@ -512,7 +512,7 @@ li {
     line-height: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     padding-top: 200px;
     font-size: 44px;
@@ -1676,27 +1676,22 @@ footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container .main__cards {
+.main__cards {
   list-style: none;
   display: flex;
   flex-direction: column;
   margin-bottom: 82px;
   justify-content: center;
   gap: 30px;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
-@media screen and (min-width: 480px) {
-  .container .main__cards {
+@media screen and (min-width: 768px) {
+  .main__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1200px) {
-  .container .main__cards {
+  .main__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1715,7 +1710,7 @@ footer {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .main__card__div {
     width: 354px;
     height: 440px;
