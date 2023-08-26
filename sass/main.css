@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-blue: #2396f3;
   --white-color: #ffffff;
@@ -121,28 +122,34 @@ li {
 }
 
 .header {
-  max-width: 100%;
+  max-width: 1600px;
   min-width: 320px;
   max-height: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--white-color);
   border-bottom: 1px solid var(--gray-color);
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+/* Resto de tu CSS aquí */
+@media screen and (min-width: 768px) {
   .header {
-    max-width: 100%;
+    max-width: 1200px;
+    min-width: 768px;
     max-height: 94px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 100%;
+    max-width: 1600px;
     max-height: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }
 .header__container {
@@ -489,7 +496,7 @@ li {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Imagen@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imagen@2x.jpg);
   }
 }
 .hero__title {
