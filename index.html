@@ -34,7 +34,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="header__menu" widht="40px" height="40px">
+          <svg class="header__menu" width="40px" height="40px">
             <use xlink:href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -95,12 +95,11 @@
     <main>
       <!--firstsection-->
       <section class="hero">
+        <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="hero__btn" data-modal-open>
+          Solicite nuestro servicio
+        </button>
 
-          <h1 class="hero__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="hero__btn" data-modal-open>
-            Solicite nuestro servicio
-          </button>
-     
         <div class="modal is-hidden" data-modal>
           <div class="modal__container">
             <button class="modal__button" type="button" data-modal-close>
@@ -113,97 +112,75 @@
                 <p class="modal__form__title">
                   Deje sus datos, nos contactaremos con usted
                 </p>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+                <div class="modal__form__div" role="group">
                   <label for="user-input" class="modal__form__label">
                     Nombre
-                    <div class="modal__form__input-container">
-                      <div class="modal__form__icon-container">
-                        <svg class="persona">
-                          <use
-                            xlink:href="./images/icons.svg#icon-persona"
-                          ></use>
-                        </svg>
-                      </div>
-                      <input
-                        class="modal__form__input"
-                        type="text"
-                        id="user-input"
-                        name="user"
-                      />
-                    </div>
                   </label>
+                  <div class="modal__form__input-container">
+                    <div class="modal__form__icon-container">
+                      <svg class="persona">
+                        <use xlink:href="./images/icons.svg#icon-persona"></use>
+                      </svg>
+                    </div>
+                    <input
+                      class="modal__form__input"
+                      type="text"
+                      id="user-input"
+                      name="user"
+                    />
+                  </div>
                 </div>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+
+                <div class="modal__form__div" role="group">
                   <label for="user-telefono" class="modal__form__label">
                     Teléfono
-                    <div class="modal__form__input-container">
-                      <div class="modal__form__icon-container">
-                        <svg class="telefono">
-                          <use
-                            xlink:href="./images/icons.svg#icon-telefono"
-                          ></use>
-                        </svg>
-                      </div>
-                      <input
-                        class="modal__form__input"
-                        type="tel"
-                        id="user-telefono"
-                        name="user-telefono"
-                      />
-                    </div>
                   </label>
+                  <div class="modal__form__input-container">
+                    <div class="modal__form__icon-container">
+                      <svg class="telefono">
+                        <use
+                          xlink:href="./images/icons.svg#icon-telefono"
+                        ></use>
+                      </svg>
+                    </div>
+                    <input
+                      class="modal__form__input"
+                      type="tel"
+                      id="user-telefono"
+                      name="user-telefono"
+                    />
+                  </div>
                 </div>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+                <div class="modal__form__div" role="group">
                   <label for="user-email" class="modal__form__label">
                     E-mail
-                    <div class="modal__form__input-container">
-                      <div class="modal__form__icon-container">
-                        <svg class="email">
-                          <use xlink:href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                      </div>
-                      <input
-                        class="modal__form__input"
-                        type="email"
-                        id="user-email"
-                        name="user-email"
-                      />
-                    </div>
                   </label>
+                  <div class="modal__form__input-container">
+                    <div class="modal__form__icon-container">
+                      <svg class="email">
+                        <use xlink:href="./images/icons.svg#icon-email"></use>
+                      </svg>
+                    </div>
+                    <input
+                      class="modal__form__input"
+                      type="email"
+                      id="user-email"
+                      name="user-email"
+                    />
+                  </div>
                 </div>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+                <div class="modal__form__div" role="group">
                   <label for="user-comentarios" class="modal__form__label">
                     Comentarios
-
-                    <textarea
-                      class="modal__form__input--textarea"
-                      name="comentarios"
-                      rows="6"
-                      placeholder="Introduzca su texto..."
-                    ></textarea>
                   </label>
+                  <textarea
+                    class="modal__form__input--textarea"
+                    name="comentarios"
+                    rows="6"
+                    placeholder="Introduzca su texto..."
+                  ></textarea>
                 </div>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+                <div class="modal__form__div" role="group">
                   <label for="check" class="modal__form__label--checkbox">
                     <div class="icon-checkbox">
                       <div
@@ -227,11 +204,7 @@
                     </p>
                   </label>
                 </div>
-                <div
-                  class="modal__form__div"
-                  role="group"
-                  aria-labelledby="contact-details-head"
-                >
+                <div class="modal__form__div" role="group">
                   <button type="submit" class="modal__form__button">
                     Enviar
                   </button>
@@ -239,7 +212,9 @@
               </div>
             </form>
           </div>
-        </section>
+        </div>
+      </section>
+
       <!----------------------------------------------------secondsection------------------------------------->
       <!-------------------------------------------svg----------listtext------------------------------------>
       <section class="listtext">
@@ -762,7 +737,7 @@
                 />
               </label>
               <button type="submit" class="footer__form__button">
-                <p class="footer__form__button--submit">Suscríbase</p>
+                Suscríbase
                 <svg class="enviar">
                   <use xlink:href="./images/icons.svg#icon-enviar"></use>
                 </svg>

@@ -293,6 +293,12 @@ footer {
     cursor: pointer;
     padding: 0;
     margin-bottom: 60px;
+        color: var(--white-color);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            margin-right: 20px;
 
     @media screen and (min-width: 481px) {
         margin-right: 137px;
@@ -318,19 +324,12 @@ footer {
     fill: var(--color-blue);
 }
 
-.footer__form__group .footer__form__button .footer__form__button--submit {
-    color: var(--white-color);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    margin-right: 20px;
-}
 
 
 
 .footer__form__group .footer__form__button>.enviar {
     height: 24px;
     width: 24px;
+    margin-left: 10px;
     fill: var(--white-color);
 }
